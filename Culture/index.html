@@ -1,0 +1,962 @@
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Портфолио тестовой документации">
+      
+      
+        <meta name="author" content="Анастасия">
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../qahacking/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>Функциональное тестирование регистрации - QA Portfolio</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="gray">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href=".." title="QA Portfolio" class="md-header__button md-logo" aria-label="QA Portfolio" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            QA Portfolio
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Функциональное тестирование регистрации
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="gray"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="QA Portfolio" class="md-nav__button md-logo" aria-label="QA Portfolio" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    QA Portfolio
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Главная
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Функциональное тестирование регистрации
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Функциональное тестирование регистрации
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      Чек-лист
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Тест-кейсы
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Тест-кейсы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fr01" class="md-nav__link">
+    <span class="md-ellipsis">
+      FR01: Регистрация нового пользователя (дымовой)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr02" class="md-nav__link">
+    <span class="md-ellipsis">
+      FR02: Ввод пароля с кириллическими буквами
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr03-email" class="md-nav__link">
+    <span class="md-ellipsis">
+      FR03: Ввод email, не соответствующего формату
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr04-100" class="md-nav__link">
+    <span class="md-ellipsis">
+      FR04: Ввод пароля длиной более 100 символов
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr05" class="md-nav__link">
+    <span class="md-ellipsis">
+      FR05: Ввод невалидных данных в поле «Имя»
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr06-50" class="md-nav__link">
+    <span class="md-ellipsis">
+      FR06: Ввод имени длиной более 50 символов
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Баг-репорты
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Баг-репорты">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#br1" class="md-nav__link">
+    <span class="md-ellipsis">
+      BR1: [Регистрация] Пароль с кириллицей некорректно определяется системой как не содержащий букв
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#br2" class="md-nav__link">
+    <span class="md-ellipsis">
+      BR2: [Регистрация] Поле «Имя» принимает цифры и спецсимволы
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#br3-100" class="md-nav__link">
+    <span class="md-ellipsis">
+      BR3: [Регистрация] Поле «Имя» принимает строку длиной более 100 символов
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../qahacking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Тестирование веб-приложения Собаседник
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PetstoreAPI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Petstore REST API Project
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      Чек-лист
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Тест-кейсы
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Тест-кейсы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fr01" class="md-nav__link">
+    <span class="md-ellipsis">
+      FR01: Регистрация нового пользователя (дымовой)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr02" class="md-nav__link">
+    <span class="md-ellipsis">
+      FR02: Ввод пароля с кириллическими буквами
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr03-email" class="md-nav__link">
+    <span class="md-ellipsis">
+      FR03: Ввод email, не соответствующего формату
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr04-100" class="md-nav__link">
+    <span class="md-ellipsis">
+      FR04: Ввод пароля длиной более 100 символов
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr05" class="md-nav__link">
+    <span class="md-ellipsis">
+      FR05: Ввод невалидных данных в поле «Имя»
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr06-50" class="md-nav__link">
+    <span class="md-ellipsis">
+      FR06: Ввод имени длиной более 50 символов
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Баг-репорты
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Баг-репорты">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#br1" class="md-nav__link">
+    <span class="md-ellipsis">
+      BR1: [Регистрация] Пароль с кириллицей некорректно определяется системой как не содержащий букв
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#br2" class="md-nav__link">
+    <span class="md-ellipsis">
+      BR2: [Регистрация] Поле «Имя» принимает цифры и спецсимволы
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#br3-100" class="md-nav__link">
+    <span class="md-ellipsis">
+      BR3: [Регистрация] Поле «Имя» принимает строку длиной более 100 символов
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">Проект "Функциональное тестирование регистрации"</h1>
+<p>Проводилось тестирование формы регистрации на сайте culture.ru. Был создан структурированный высокоуровневый чек-лист для проверки всех элементов формы. Для оценки работы модулей регистрации разработаны тест-кейсы как с позитивными, так и с негативными сценариями. В результате тестирования выявлено 3 бага, по каждому оформлены баг-репорты.</p>
+<h2 id="-">Чек-лист</h2>
+<table>
+<thead>
+<tr>
+<th>Проект высокоуровневого чек-листа тестирования формы регистрации сайта</th>
+<th></th>
+<th>https://www.culture.ru/auth/register</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>№ п/п</td>
+<td>Список</td>
+<td>Комментарии</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Регистрация пользователя с валидными данными (дымовой)</td>
+<td>Ввести во все обязательные поля Email, Пароль, Повторите пароль, Имя, Фамилия валидные данные, нажать на чек-бокс ""Я принимаю условия…"" и нажать Продолжить, в полученном письме перейти по ссылке (ожидаемый результат - авторизация)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Функциональность регистрации - позитивные проверки</td>
+<td>Проверка регистрации нового пользователя с необязательными элементами с валидными данными: ввести в поля Email, Пароль, Повторите пароль, Имя, Фамилия валидные данные, выбрать радиобаттон ""Не указан""  нажать на чек-боксы ""Я принимаю условия…"", ""Хочу получать рассылку..."" и нажать Продолжить, в полученном письме перейти по ссылке (ожидаемый результат - авторизация)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Функциональность элементов формы регистрации - позитивные проверки</td>
+<td>Ввод, отображение, редактирование и удаление данных в полях: Email, Пароль, Повторить пароль, Имя, Фамилия. Функционирование кнопкок: радиобаттон Пол, Продолжить, чек-боксы ""Я принимаю условия..."", ""Хочу получать рассылку..."". Внутренней ссылки: Пользовательского соглашения.<br>Ввод данных с клавиатуры без использования манипулятора ""мышь""</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Валидация полей - ввод валидных данных</td>
+<td>Email - по маске <em>@</em>.*<br>Пароль - не менее 8 символов и не более 100.<br>поля Имя, Фамилия - ввод букв, цифр и символов: "" "" (пробел) и ""-""(дефис)<br>Для выбора валидных тестовых данных применить техники тест-дизайна</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Переходы по внутренним ссылкам</td>
+<td>По ссылке Пользовательского соглашения открывается соответствующая страница, доступная для чтения.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Валидация полей - ввод невалидных данных</td>
+<td>Email - не по маске <em>@</em>.*<br>Пароль - менее 8 символов и более 100.<br>поля Имя, Фамилия - ввод спец.символов, кроме  "" "" (пробел) и ""-""(дефис)<br>Чек-бокс ""Я принимаю условия…"" - отключенное состояние.<br>Для выбора невалидных тестовых данных применить техники тест-дизайна</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Базовая проверка безопасности</td>
+<td>Ввести в текстовые поля :<br> - ~@#$%^&amp;*()_+</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Регистрация пользователя - негативные проверки</td>
+<td>При незаполнении одного/ нескольких/ всех обязательных полей.  <br>При несовпадении паролей, <br>при вводе неверного кода из письма.<br>Обязательный чек-бокс ""Я принимаю условия…"" - отключенное состояние.<br>Проверка регистрации уже зарегистрированного пользователя.</td>
+</tr>
+<tr>
+<td>9</td>
+<td>UI/UX формы регистрации</td>
+<td>Измения курсора при наведения на элементы: стрелка - на некликабельные элементы, поинт - на кнопки и ссылки, текст (I)- на поля ввода.<br>Эффект подсветки для активных элементов.<br>Все выравнено, в едином стиле и цветовой гамме.<br>Наличие bullets для скрытия пароля<br>Восприятие (шрифт, фон).<br>Все обязательные поля отмечены.<br>Орф. и грамм. ошибки отсутствуют во всех надписях.</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Удобство формы регистрации</td>
+<td>Наличие меток, плэйсхолдеров, подсказок, тултипов.<br>Наличие кнопки Парольный глаз, поля Повторить пароль.<br>Элементы интерфейса удобны для использования – тапать, например, как с ПК, так и на мобильных устройствах.<br>Значения в полях установлены по умолчанию.<br>Все подсказки и сообщения об ошибках верные и понятны.<br>Ввод данных с помощью copypast.</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Доступность формы</td>
+<td>Читабельность, контрастность (шрифт, фон).<br>Доступна программам чтения с экрана.</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Отображение в оконном режиме и масштабирование</td>
+<td>Форма адаптируется к разным оконным режимам браузера и изменению масштаба страницы.</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Конфигурационное тестирование</td>
+<td>Проверить на разных ОС, браузерах, платформах, разрешениях экрана и мобильных устройствах.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-_1">Тест-кейсы</h2>
+<h3 id="fr01">FR01: Регистрация нового пользователя (дымовой)</h3>
+<p><strong>Приоритет:</strong> Highest<br />
+<strong>Окружение:</strong> ПК Windows 10 (64), Google Chrome v.139.0.7258.139, 1920x1080<br />
+<strong>Модуль:</strong> Регистрация  </p>
+<p><strong>Предусловия:</strong><br />
+1. Открыта форма регистрации <a href="https://www.culture.ru/auth/register">https://www.culture.ru/auth/register</a><br />
+2. Пользователь не авторизован  </p>
+<p><strong>Шаги:</strong><br />
+1. Заполнить все поля валидными данными нового пользователя: E-mail, Пароль, Повторите пароль, Имя, Фамилия.<br />
+2. Отметить чек-бокс «Я принимаю условия…».<br />
+3. Нажать кнопку «Продолжить».<br />
+4. Проверить почту, открыть письмо и перейти по ссылке подтверждения.  </p>
+<p><strong>Ожидаемый результат:</strong><br />
+Пользователь успешно авторизован и перенаправлен на главную страницу.  </p>
+<p><strong>Статус:</strong> Passed<br />
+<strong>Автор:</strong> Горобец А.А<br />
+<strong>Назначено:</strong> Горобец А.А<br />
+<strong>Комментарии:</strong><br />
+- Email вводится по маске <em>@</em>.*<br />
+- Пароль: 8–100 символов, минимум одна цифра, одна заглавная и одна строчная буква.<br />
+- Повторите пароль: должен совпадать с «Пароль».<br />
+- Имя/Фамилия: буквы, пробел, дефис; длина 1–50.<br />
+- Чек-бокс «Я принимаю условия…» обязателен для продолжения.  </p>
+<hr />
+<h3 id="fr02">FR02: Ввод пароля с кириллическими буквами</h3>
+<p><strong>Приоритет:</strong> High<br />
+<strong>Окружение:</strong> ПК Windows 10 (64), Google Chrome v.139.0.7258.139, 1920x1080<br />
+<strong>Модуль:</strong> Регистрация  </p>
+<p><strong>Предусловия:</strong><br />
+1. Открыта форма регистрации <a href="https://www.culture.ru/auth/register">https://www.culture.ru/auth/register</a><br />
+2. Пользователь не авторизован  </p>
+<p><strong>Шаги:</strong><br />
+1. В поле «Пароль» ввести 6 цифр, 1 кириллическую заглавную букву и 1 кириллическую строчную букву.<br />
+2. Переместить фокус на поле «Повторите пароль» (Tab/клик).  </p>
+<p><strong>Ожидаемый результат:</strong><br />
+1. Введённые символы скрыты буллитами.<br />
+2. Пароль принимается системой.  </p>
+<p><strong>Статус:</strong> Failed<br />
+<strong>Автор:</strong> Горобец А.А<br />
+<strong>Назначено:</strong> Горобец А.А<br />
+<strong>Комментарии:</strong><br />
+- Валидация поля пароль: 8–100 символов, минимум одна цифра, заглавная и строчная буква.<br />
+- Баг-репорт: BR1.  </p>
+<hr />
+<h3 id="fr03-email">FR03: Ввод email, не соответствующего формату</h3>
+<p><strong>Приоритет:</strong> Medium<br />
+<strong>Окружение:</strong> ПК Windows 10 (64), Google Chrome v.139.0.7258.139, 1920x1080<br />
+<strong>Модуль:</strong> Регистрация  </p>
+<p><strong>Предусловия:</strong><br />
+1. Открыта форма регистрации <a href="https://www.culture.ru/auth/register">https://www.culture.ru/auth/register</a><br />
+2. Пользователь не авторизован  </p>
+<p><strong>Шаги:</strong><br />
+1. Ввести строку, не соответствующую маске формата email.<br />
+2. Переместить фокус в поле «Пароль» (клик/Tab).  </p>
+<p><strong>Ожидаемый результат:</strong><br />
+1. В поле отображается введённое значение.<br />
+2. После потери фокуса под полем «Email» отображается сообщение: «Адрес электронной почты введён в неправильном формате».  </p>
+<p><strong>Статус:</strong> Passed<br />
+<strong>Автор:</strong> Горобец А.А<br />
+<strong>Назначено:</strong> Горобец А.А<br />
+<strong>Комментарии:</strong><br />
+- Валидация поля E-mail: <em>@</em>.*  </p>
+<hr />
+<h3 id="fr04-100">FR04: Ввод пароля длиной более 100 символов</h3>
+<p><strong>Приоритет:</strong> Medium<br />
+<strong>Окружение:</strong> ПК Windows 10 (64), Google Chrome v.139.0.7258.139, 1920x1080<br />
+<strong>Модуль:</strong> Регистрация  </p>
+<p><strong>Предусловия:</strong><br />
+1. Открыта форма регистрации <a href="https://www.culture.ru/auth/register">https://www.culture.ru/auth/register</a><br />
+2. Пользователь не авторизован  </p>
+<p><strong>Шаги:</strong><br />
+1. В поле «Пароль» ввести более 100 символов.<br />
+2. Переместить фокус в поле «Повторите пароль» (клик/Tab).  </p>
+<p><strong>Ожидаемый результат:</strong><br />
+1. В поле отображается введённая маскированная строка.<br />
+2. После потери фокуса отображается сообщение об ошибке: «Длина пароля должна быть не более 100 символов».  </p>
+<p><strong>Статус:</strong> Passed<br />
+<strong>Автор:</strong> Горобец А.А<br />
+<strong>Назначено:</strong> Горобец А.А<br />
+<strong>Комментарии:</strong><br />
+- Валидация поля пароль: 8–100 символов, минимум одна цифра, заглавная и строчная буква.  </p>
+<hr />
+<h3 id="fr05">FR05: Ввод невалидных данных в поле «Имя»</h3>
+<p><strong>Приоритет:</strong> Medium<br />
+<strong>Окружение:</strong> ПК Windows 10 (64), Google Chrome v.139.0.7258.139, 1920x1080<br />
+<strong>Модуль:</strong> Регистрация  </p>
+<p><strong>Предусловия:</strong><br />
+1. Открыта форма регистрации <a href="https://www.culture.ru/auth/register">https://www.culture.ru/auth/register</a><br />
+2. Пользователь не авторизован  </p>
+<p><strong>Шаги:</strong><br />
+1. В поле «Имя» ввести невалидные данные.<br />
+2. Переместить фокус на другое поле.  </p>
+<p><strong>Ожидаемый результат:</strong><br />
+1. В поле отображаются введённые символы.<br />
+2. Появляется сообщение об ошибке: «Имя может содержать только буквы, пробел и дефис».  </p>
+<p><strong>Статус:</strong> Failed<br />
+<strong>Автор:</strong> Горобец А.А<br />
+<strong>Назначено:</strong> Горобец А.А<br />
+<strong>Комментарии:</strong><br />
+- Валидация поля «Имя»: буквы, пробел, дефис; длина ≤ 50 символов.<br />
+- Баг-репорт: BR2.  </p>
+<hr />
+<h3 id="fr06-50">FR06: Ввод имени длиной более 50 символов</h3>
+<p><strong>Приоритет:</strong> Medium<br />
+<strong>Окружение:</strong> ПК Windows 10 (64), Google Chrome v.139.0.7258.139, 1920x1080<br />
+<strong>Модуль:</strong> Регистрация  </p>
+<p><strong>Предусловия:</strong><br />
+1. Открыта форма регистрации <a href="https://www.culture.ru/auth/register">https://www.culture.ru/auth/register</a><br />
+2. Пользователь не авторизован  </p>
+<p><strong>Шаги:</strong><br />
+1. В поле «Имя» ввести строку длиной более 50 символов.<br />
+2. Переместить фокус в поле «Повторите пароль» (клик/Tab).  </p>
+<p><strong>Ожидаемый результат:</strong><br />
+1. В поле отображаются введённые символы.<br />
+2. Отображается сообщение об ошибке: «Имя не может содержать более 50 символов».  </p>
+<p><strong>Статус:</strong> Failed<br />
+<strong>Автор:</strong> Горобец А.А<br />
+<strong>Назначено:</strong> Горобец А.А<br />
+<strong>Комментарии:</strong><br />
+- Валидация поля «Имя»: буквы, пробел, дефис; длина ≤ 50 символов.<br />
+- Баг-репорт: BR3.  </p>
+<h2 id="-_2">Баг-репорты</h2>
+<h3 id="br1">BR1: [Регистрация] Пароль с кириллицей некорректно определяется системой как не содержащий букв</h3>
+<p><strong>Серьёзность / Приоритет:</strong> —<br />
+<strong>Автор:</strong> Горобец А.А<br />
+<strong>Окружение:</strong> ПК Windows 10 (64), Google Chrome v.139.0.7258.139, 1920x1080<br />
+<strong>Модуль:</strong> Регистрация  </p>
+<p><strong>Предусловия:</strong><br />
+1. Открыта форма регистрации <a href="https://www.culture.ru/auth/register">https://www.culture.ru/auth/register</a><br />
+2. Пользователь не авторизован  </p>
+<p><strong>Шаги:</strong><br />
+1. В поле «Пароль» ввести 6 цифр, 1 кириллическую заглавную букву и 1 кириллическую строчную букву.<br />
+2. Переместить фокус на поле «Повторите пароль» (Tab/клик).  </p>
+<p><strong>Фактический результат:</strong><br />
+Введённые символы скрыты буллитами. Под полем появляется сообщение: «Пароль должен содержать минимум 1 букву», поле подсвечивается красной рамкой.  </p>
+<p><strong>Ожидаемый результат:</strong><br />
+Введённые символы скрыты буллитами. Сообщение об ошибке не появляется. Пароль принимается системой.  </p>
+<p><strong>Статус:</strong> New<br />
+<strong>Назначено:</strong> —<br />
+<strong>Комментарии:</strong><br />
+- Валидация поля «Пароль»: 8–100 символов, минимум одна цифра, одна заглавная и одна строчная буква.<br />
+- Тестовые данные: <code>123456Пд</code><br />
+- ID тест-кейса: <strong>FR02</strong>  </p>
+<hr />
+<h3 id="br2">BR2: [Регистрация] Поле «Имя» принимает цифры и спецсимволы</h3>
+<p><strong>Серьёзность / Приоритет:</strong> —<br />
+<strong>Автор:</strong> Горобец А.А<br />
+<strong>Окружение:</strong> ПК Windows 10 (64), Google Chrome v.139.0.7258.139, 1920x1080<br />
+<strong>Модуль:</strong> Регистрация  </p>
+<p><strong>Предусловия:</strong><br />
+1. Открыта форма регистрации <a href="https://www.culture.ru/auth/register">https://www.culture.ru/auth/register</a><br />
+2. Пользователь не авторизован  </p>
+<p><strong>Шаги:</strong><br />
+1. В поле «Имя» ввести цифры или спецсимволы.<br />
+2. Переместить фокус на другое поле.  </p>
+<p><strong>Фактический результат:</strong><br />
+Значение принимается, сообщения об ошибке нет.  </p>
+<p><strong>Ожидаемый результат:</strong><br />
+Появляется сообщение об ошибке: «Имя может содержать только буквы, пробел и дефис».  </p>
+<p><strong>Статус:</strong> New<br />
+<strong>Назначено:</strong> —<br />
+<strong>Комментарии:</strong><br />
+- Допустимы: буквы (кириллица и/или латиница), пробел, дефис.<br />
+- Тестовые данные: <code>12345</code>, <code>@@@@@</code>, <code>&lt;script&gt;alert("XSS")&lt;/script&gt;</code><br />
+- ID тест-кейса: <strong>FR05</strong>  </p>
+<hr />
+<h3 id="br3-100">BR3: [Регистрация] Поле «Имя» принимает строку длиной более 100 символов</h3>
+<p><strong>Серьёзность / Приоритет:</strong> —<br />
+<strong>Автор:</strong> Горобец А.А<br />
+<strong>Окружение:</strong> ПК Windows 10 (64), Google Chrome v.139.0.7258.139, 1920x1080<br />
+<strong>Модуль:</strong> Регистрация  </p>
+<p><strong>Предусловия:</strong><br />
+1. Открыта форма регистрации <a href="https://www.culture.ru/auth/register">https://www.culture.ru/auth/register</a><br />
+2. Пользователь не авторизован  </p>
+<p><strong>Шаги:</strong><br />
+1. Ввести в поле «Имя» строку длиной более 100 символов.<br />
+2. Переместить фокус на другое поле.  </p>
+<p><strong>Фактический результат:</strong><br />
+Значение принимается, сообщения об ошибке нет.  </p>
+<p><strong>Ожидаемый результат:</strong><br />
+Отображается сообщение об ошибке: «Имя не может содержать более 50 символов».  </p>
+<p><strong>Статус:</strong> New<br />
+<strong>Назначено:</strong> —<br />
+<strong>Комментарии:</strong><br />
+- Ограничение: не более 50 символов.<br />
+- ID тест-кейса: <strong>FR06</strong>  </p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  К началу
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.instant", "navigation.sections", "search.highlight", "search.suggest", "content.code.copy"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

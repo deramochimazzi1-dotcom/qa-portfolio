@@ -1,0 +1,2137 @@
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Портфолио тестовой документации">
+      
+      
+        <meta name="author" content="Анастасия">
+      
+      
+      
+        <link rel="prev" href="../Culture/">
+      
+      
+        <link rel="next" href="../PetstoreAPI/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>Тестирование веб-приложения Собаседник - QA Portfolio</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="gray">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#-" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href=".." title="QA Portfolio" class="md-header__button md-logo" aria-label="QA Portfolio" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            QA Portfolio
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Тестирование веб-приложения Собаседник
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="gray"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="QA Portfolio" class="md-nav__button md-logo" aria-label="QA Portfolio" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    QA Portfolio
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Главная
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Culture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Функциональное тестирование регистрации
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Тестирование веб-приложения Собаседник
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Тестирование веб-приложения Собаседник
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#-_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Чек-лист
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Тест-кейсы
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Тест-кейсы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Главная страница
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Хедер
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      О нас
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Форма бронирования
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Страница «Блог Джесси»
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Магазин
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Футер
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#devtools" class="md-nav__link">
+    <span class="md-ellipsis">
+      DevTools
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Баг-репорты
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PetstoreAPI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Petstore REST API Project
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#-_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Чек-лист
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Тест-кейсы
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Тест-кейсы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Главная страница
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Хедер
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      О нас
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Форма бронирования
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Страница «Блог Джесси»
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Магазин
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Футер
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#devtools" class="md-nav__link">
+    <span class="md-ellipsis">
+      DevTools
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Баг-репорты
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="-">Проект "Тестирование веб-приложения Собаседник"</h1>
+<p>Проект разработан в учебных целях, был выполнен с помощью тренировочного сайта https://guru.qahacking.ru. В ходе работы было разработано:<br />
+-Чек-лист<br />
+-76 тест-кейсов<br />
+-15 баг-репортов</p>
+<h2 id="-_1">Чек-лист</h2>
+<table>
+<thead>
+<tr>
+<th>№</th>
+<th>Раздел</th>
+<th>Проверка</th>
+<th>Ожидаемый</th>
+<th>Статус</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>UI</td>
+<td>Логотип отображается на всех страницах</td>
+<td>Логотип виден, корректного размера</td>
+<td>☐</td>
+</tr>
+<tr>
+<td>2</td>
+<td>UI</td>
+<td>Цветовая схема соответствует дизайну</td>
+<td>Цвета отображаются правильно</td>
+<td>☐</td>
+</tr>
+<tr>
+<td>3</td>
+<td>UI</td>
+<td>Шрифты читаемы на всех устройствах</td>
+<td>Текст легко читаем, нет наложений</td>
+<td>☐</td>
+</tr>
+<tr>
+<td>4</td>
+<td>UI</td>
+<td>Кнопки кликабельны и видимы</td>
+<td>Все кнопки отображаются корректно</td>
+<td>☐</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Навигация</td>
+<td>Меню работает корректно</td>
+<td>Все пункты меню открываются на правильные страницы</td>
+<td>☐</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Навигация</td>
+<td>Пункты подменю кликабельны</td>
+<td>Работают корректно</td>
+<td>☐</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Ссылки</td>
+<td>Внутренние ссылки</td>
+<td>Все ссылки открываются без ошибки 404</td>
+<td>☐</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Ссылки</td>
+<td>Внешние ссылки</td>
+<td>Открываются в новой вкладке</td>
+<td>☐</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Контент</td>
+<td>Заголовки H1/H2 на главной странице</td>
+<td>Соответствуют дизайну и смыслу</td>
+<td>☐</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Контент</td>
+<td>Основной текст</td>
+<td>Текст без ошибок, информативный</td>
+<td>☐</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Контент</td>
+<td>Изображения</td>
+<td>Все изображения загружены, без искажений</td>
+<td>☐</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Формы</td>
+<td>Форма бронирования питомца присутствует</td>
+<td>Форма видна и доступна</td>
+<td>☐</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Формы</td>
+<td>Обязательные поля отмечены</td>
+<td>Проверка валидации пустых полей</td>
+<td>☐</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Формы</td>
+<td>Поля с email и телефоном</td>
+<td>Валидация корректна</td>
+<td>☐</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Формы</td>
+<td>Кнопка "Отправить"</td>
+<td>Доступна только после заполнения обязательных полей</td>
+<td>☐</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Адаптивность</td>
+<td>Страница корректно отображается на мобильных</td>
+<td>Нет горизонтальной прокрутки, элементы видимы</td>
+<td>☐</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Адаптивность</td>
+<td>Страница корректно отображается на планшете</td>
+<td>Элементы не налезают друг на друга</td>
+<td>☐</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Функциональность</td>
+<td>Все интерактивные элементы работают</td>
+<td>Кнопки, ссылки, меню работают</td>
+<td>☐</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Производительность</td>
+<td>Время загрузки страницы главной</td>
+<td>&lt; 3 секунд</td>
+<td>☐</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Безопасность</td>
+<td>Сайт открывается по HTTPS</td>
+<td>Нет предупреждений безопасности</td>
+<td>☐</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Юзабилити</td>
+<td>Кнопки и ссылки легко кликабельны</td>
+<td>Пользователь может удобно навигировать</td>
+<td>☐</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Юзабилити</td>
+<td>Цветовые схемы и контрастность</td>
+<td>Кнопки, ссылки, меню работают</td>
+<td>☐</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-_2">Тест-кейсы</h2>
+<p>Далее полная версия всех  тест-кейсов для сайта https://guru.qahacking.ru/  </p>
+<h3 id="_1">Главная страница</h3>
+<p><strong>ID: TC-001</strong><br />
+<strong>Заголовок:</strong> Проверка отображения логотипа на главной странице<br />
+<strong>Предусловия:</strong> Открыта главная страница https://guru.qahacking.ru/<br />
+<strong>Шаги:</strong><br />
+1. Обратить внимание на область хедера сайта.<br />
+2. Проверить наличие логотипа в верхней части страницы.<br />
+3. Навести курсор на логотип.<br />
+<strong>Ожидаемый результат:</strong><br />
+Логотип отображается корректно, не искажён, расположен в хедере. При наведении не происходит графических артефактов или смещения.<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<hr />
+<p><strong>ID: TC-002</strong><br />
+<strong>Заголовок:</strong> Проверка читаемости текстового контента на главной странице<br />
+<strong>Предусловия:</strong> Открыта главная страница https://guru.qahacking.ru/<br />
+<strong>Шаги:</strong><br />
+1. Визуально просмотреть заголовки, подзаголовки и основной текст на странице.<br />
+2. Проверить, что текст не перекрывается другими элементами.<br />
+3. Проверить межстрочные интервалы и расстояние между абзацами.<br />
+4. Оценить контрастность текста и фона.<br />
+<strong>Ожидаемый результат:</strong><br />
+Текст читаемый, не накладывается на другие элементы. Размер шрифта соответствует дизайну, межстрочные интервалы соблюдены. Контраст текста и фона достаточный для чтения.<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<hr />
+<p><strong>ID: TC-003</strong><br />
+<strong>Заголовок:</strong> Проверка отображения кнопки "Подробнее о питомнике" на главной странице<br />
+<strong>Предусловия:</strong> Открыта главная страница https://guru.qahacking.ru/<br />
+<strong>Шаги:</strong><br />
+1. Прокрутить страницу до блока с кнопкой "Подробнее о питомнике".<br />
+2. Обратить внимание на наличие кнопки.<br />
+<strong>Ожидаемый результат:</strong><br />
+Кнопка "Подробнее о питомнике" отображается, текст читаемый, кнопка не перекрыта другими элементами.<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<hr />
+<p><strong>ID: TC-004</strong><br />
+<strong>Заголовок:</strong> Проверка кликабельности кнопки "Подробнее о питомнике"<br />
+<strong>Предусловия:</strong> Открыта главная страница https://guru.qahacking.ru/<br />
+<strong>Шаги:</strong><br />
+1. Нажать на кнопку "Подробнее о питомнике".<br />
+<strong>Ожидаемый результат:</strong><br />
+Переход осуществляется на страницу https://guru.qahacking.ru/index.php/about.<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<hr />
+<p><strong>ID: TC-005</strong><br />
+<strong>Заголовок:</strong> Проверка hover-эффекта у кнопки "Подробнее о питомнике"<br />
+<strong>Предусловия:</strong> Открыта главная страница https://guru.qahacking.ru/<br />
+<strong>Шаги:</strong><br />
+1. Навести курсор на кнопку "Подробнее о питомнике".<br />
+<strong>Ожидаемый результат:</strong><br />
+Кнопка визуально реагирует: цвет меняется на оранжевый (#ff9d3b), а текст внутри меняется на полужирный, цвет (#223046).<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<hr />
+<p><strong>ID: TC-006</strong><br />
+<strong>Заголовок:</strong> Проверка наличия и корректности заголовка H1 на главной странице<br />
+<strong>Предусловия:</strong> Открыта главная страница https://guru.qahacking.ru/<br />
+<strong>Шаги:</strong><br />
+1. Просмотреть содержимое страницы.<br />
+2. Найти заголовок уровня H1.<br />
+<strong>Ожидаемый результат:</strong><br />
+Заголовок H1 присутствует, текст соответствует теме главной страницы, уникальный на странице, читаемый.<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<hr />
+<p><strong>ID: TC-007</strong><br />
+<strong>Заголовок:</strong> Проверка отображения баннера (Hero Image) на главной странице<br />
+<strong>Предусловия:</strong> Открыта главная страница https://guru.qahacking.ru/<br />
+<strong>Шаги:</strong><br />
+1. Просмотреть верхнюю часть страницы.<br />
+2. Проверить наличие баннера (Hero Image).<br />
+<strong>Ожидаемый результат:</strong><br />
+Hero Image отображается корректно, без искажений.<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<hr />
+<p><strong>ID: TC-008</strong><br />
+<strong>Заголовок:</strong> Проверка наличия alt-тега у главного фото (Hero Image)<br />
+<strong>Предусловия:</strong> Открыта главная страница, DevTools включён<br />
+<strong>Шаги:</strong><br />
+1. Проверить HTML-код Hero Image.<br />
+2. Убедиться, что атрибут alt присутствует и корректно описывает изображение.<br />
+<strong>Ожидаемый результат:</strong><br />
+Hero Image содержит alt-тег с правильным описанием.<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<hr />
+<p><a id="tc-009"></a>
+<strong>ID: TC-009</strong><br />
+<strong>Заголовок:</strong> Проверка отображения карусели фотографий на главной странице<br />
+<strong>Предусловия:</strong> Открыта главная страница https://guru.qahacking.ru/<br />
+<strong>Шаги:</strong><br />
+1. Пролистать страницу до блока с каруселью.<br />
+2. Проверить видимость всех элементов карусели (фотографии, стрелки навигации).<br />
+<strong>Ожидаемый результат:</strong><br />
+Карусель отображается полностью, изображения видимы, стрелки навигации присутствуют.<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<h3 id="_2">Хедер</h3>
+<p><strong>ID: TC-010</strong><br />
+<strong>Заголовок:</strong> Проверка отображения кнопки «О нас» в навигационном меню<br />
+<strong>Предусловия:</strong> Открыта главная страница https://guru.qahacking.ru/<br />
+<strong>Шаги:</strong><br />
+1. Обратить внимание на область верхнего меню (header).<br />
+2. Найти кнопку «О нас».<br />
+<strong>Ожидаемый результат:</strong><br />
+Кнопка «О нас» отображается корректно, текст читаемый, элемент виден.<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<hr />
+<p><strong>ID: TC-011</strong><br />
+<strong>Заголовок:</strong> Проверка кликабельности кнопки "О нас"<br />
+<strong>Предусловия:</strong> Открыта главная страница https://guru.qahacking.ru/<br />
+<strong>Шаги:</strong><br />
+1. Нажать на кнопку "О нас" в верхнем меню.<br />
+<strong>Ожидаемый результат:</strong><br />
+Выполняется переход на страницу https://guru.qahacking.ru/index.php/about.<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<hr />
+<p><strong>ID: TC-012</strong><br />
+<strong>Заголовок:</strong> Проверка открытия ссылки "О нас" в текущей вкладке<br />
+<strong>Предусловия:</strong> Открыта главная страница https://guru.qahacking.ru/<br />
+<strong>Шаги:</strong><br />
+1. Нажать на кнопку "О нас" в меню.<br />
+<strong>Ожидаемый результат:</strong><br />
+Страница "О нас" открывается в той же вкладке браузера.<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<hr />
+<p><strong>ID: TC-013</strong><br />
+<strong>Заголовок:</strong> Проверка hover-эффекта для кнопки "О нас"<br />
+<strong>Предусловия:</strong> Открыта главная страница<br />
+<strong>Шаги:</strong><br />
+1. Навести курсор на кнопку "О нас" в меню.<br />
+<strong>Ожидаемый результат:</strong><br />
+Кнопка меняет состояние при наведении имеет подчёркивание.<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<hr />
+<p><strong>ID: TC-014</strong><br />
+<strong>Заголовок:</strong> Проверка перехода по пункту меню "О нас"<br />
+<strong>Предусловия:</strong> Открыта главная страница https://guru.qahacking.ru/<br />
+<strong>Шаги:</strong><br />
+1. Нажать на пункт меню "О нас" в шапке сайта.<br />
+<strong>Ожидаемый результат:</strong><br />
+Выполняется переход на страницу https://guru.qahacking.ru/index.php/about. Страница успешно загружается без ошибок.<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<hr />
+<p><a id="tc-015"></a>
+<strong>ID: TC-015</strong><br />
+<strong>Заголовок:</strong> Проверка перехода по пункту подменю "Советы" в разделе "О нас"<br />
+<strong>Предусловия:</strong> Открыта главная страница https://guru.qahacking.ru/<br />
+<strong>Шаги:</strong><br />
+1. Навести курсор на пункт меню "О нас" в шапке сайта.<br />
+2. В выпадающем подменю нажать на пункт "Советы".<br />
+<strong>Ожидаемый результат:</strong><br />
+Выполняется переход на страницу с советами (например, https://guru.qahacking.ru/index.php/tips или другой корректный URL). Страница успешно загружается без ошибок.<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<hr />
+<p><strong>ID: TC-016</strong><br />
+<strong>Заголовок:</strong> Проверка hover-эффекта для кнопки "Блог Джесси"<br />
+<strong>Предусловия:</strong> Открыта главная страница<br />
+<strong>Шаги:</strong><br />
+1. Навести курсор на кнопку "Блог Джесси" в меню.<br />
+<strong>Ожидаемый результат:</strong><br />
+Кнопка меняет состояние при наведении имеет подчёркивание.<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<hr />
+<p><strong>ID: TC-017</strong><br />
+<strong>Заголовок:</strong> Проверка перехода по пункту меню "Блог Джесси"<br />
+<strong>Предусловия:</strong> Открыта главная страница https://guru.qahacking.ru/<br />
+<strong>Шаги:</strong><br />
+1. Нажать на пункт меню "Блог Джесси" в шапке сайта.<br />
+<strong>Ожидаемый результат:</strong><br />
+Выполняется переход на страницу https://guru.qahacking.ru/index.php/news. Страница успешно загружается без ошибок.<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<hr />
+<p><strong>ID: TC-018</strong><br />
+<strong>Заголовок:</strong> Проверка hover-эффекта для кнопки "Магазин"<br />
+<strong>Предусловия:</strong> Открыта главная страница<br />
+<strong>Шаги:</strong><br />
+1. Навести курсор на кнопку "Магазин" в меню.<br />
+<strong>Ожидаемый результат:</strong><br />
+Кнопка меняет состояние при наведении имеет подчёркивание.<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<hr />
+<p><strong>ID: TC-019</strong><br />
+<strong>Заголовок:</strong> Проверка перехода по пункту меню "Магазин"<br />
+<strong>Предусловия:</strong> Открыта главная страница https://guru.qahacking.ru/<br />
+<strong>Шаги:</strong><br />
+1. Нажать на пункт меню "Магазин" в шапке сайта.<br />
+<strong>Ожидаемый результат:</strong><br />
+Выполняется переход на страницу https://guru.qahacking.ru/index.php/magazin. Страница успешно загружается без ошибок.<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<hr />
+<p><strong>ID: TC-020</strong><br />
+<strong>Заголовок:</strong> Проверка перехода по пункту подменю "Корзина" в разделе "Магазин"<br />
+<strong>Предусловия:</strong> Открыта главная страница https://guru.qahacking.ru/<br />
+<strong>Шаги:</strong><br />
+1. Навести курсор на пункт меню "Магазин" в шапке сайта.<br />
+2. В выпадающем подменю нажать на пункт "Корзина".<br />
+<strong>Ожидаемый результат:</strong><br />
+Выполняется переход на страницу с корзиной https://guru.qahacking.ru/index.php/magazin/korzina. Страница успешно загружается без ошибок.<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<hr />
+<p><strong>ID: TC-021</strong><br />
+<strong>Заголовок:</strong> Проверка перехода по пункту подменю "Избранное" в разделе "Магазин"<br />
+<strong>Предусловия:</strong> Открыта главная страница https://guru.qahacking.ru/<br />
+<strong>Шаги:</strong><br />
+1. Навести курсор на пункт меню "Магазин" в шапке сайта.<br />
+2. В выпадающем подменю нажать на пункт "Избранное".<br />
+<strong>Ожидаемый результат:</strong><br />
+Выполняется переход на страницу избранного https://guru.qahacking.ru/index.php/magazin/izbrannoe. Страница успешно загружается без ошибок.<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<hr />
+<p><strong>ID: TC-022</strong><br />
+<strong>Заголовок:</strong> Проверка hover-эффекта для кнопки "IT курсы"<br />
+<strong>Предусловия:</strong> Открыта главная страница<br />
+<strong>Шаги:</strong><br />
+1. Навести курсор на кнопку "IT курсы" в меню.<br />
+<strong>Ожидаемый результат:</strong><br />
+Кнопка меняет состояние при наведении имеет подчёркивание.<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<hr />
+<p><strong>ID: TC-023</strong><br />
+<strong>Заголовок:</strong> Проверка внешней ссылки "IT курсы" в навигации сайта<br />
+<strong>Предусловия:</strong> Открыта главная страница https://guru.qahacking.ru/<br />
+<strong>Шаги:</strong><br />
+1. Найти в навигационном меню ссылку "IT курсы".<br />
+2. Нажать на ссылку.<br />
+<strong>Ожидаемый результат:</strong><br />
+Выполняется переход на внешний ресурс https://ermita.one/courses/. Ссылка открывается в новой вкладке браузера.<br />
+<strong>Постусловия:</strong> Закрыть открытую вкладку внешнего ресурса  </p>
+<hr />
+<p><strong>ID: TC-024</strong><br />
+<strong>Заголовок:</strong> Проверка внешней ссылки "Проверь свой уровень" в навигации сайта<br />
+<strong>Предусловия:</strong> Открыта главная страница https://guru.qahacking.ru/<br />
+<strong>Шаги:</strong><br />
+1. Найти в навигационном меню ссылку "Проверь свой уровень".<br />
+2. Нажать на ссылку.<br />
+<strong>Ожидаемый результат:</strong><br />
+Выполняется переход на внешний ресурс https://ermita.one/matricy-kompetencij/. Ссылка открывается в новой вкладке браузера.<br />
+<strong>Постусловия:</strong> Закрыть открытую вкладку внешнего ресурса  </p>
+<hr />
+<p><strong>ID: TC-025</strong><br />
+<strong>Заголовок:</strong> Проверка внешней ссылки "Тренажер тестирования API" в навигации сайта<br />
+<strong>Предусловия:</strong> Открыта главная страница https://guru.qahacking.ru/<br />
+<strong>Шаги:</strong><br />
+1. Найти в навигационном меню ссылку "Тренажер тестирования API".<br />
+2. Нажать на ссылку.<br />
+<strong>Ожидаемый результат:</strong><br />
+Выполняется переход на внешний ресурс https://oort.qahacking.ru/. Ссылка открывается в новой вкладке браузера.<br />
+<strong>Постусловия:</strong> Закрыть открытую вкладку внешнего ресурса  </p>
+<h3 id="_3">О нас</h3>
+<p><a id="tc-026"></a>
+<strong>ID: TC-026</strong><br />
+<strong>Заголовок:</strong> Проверка текста в верхней части страницы "About"<br />
+<strong>Предусловия:</strong><br />
+1. Открыта страница https://guru.qahacking.ru/index.php/about.<br />
+2. Страница полностью загружена, соединение стабильное.<br />
+<strong>Шаги:</strong><br />
+1. Перейти на страницу <code>/about</code>.<br />
+2. Просмотреть верхнюю часть страницы (hero-блок).<br />
+3. Проверить отображаемый текст.<br />
+<strong>Ожидаемый результат:</strong><br />
+- В верхней части страницы отображается корректный заголовок, соответствующий дизайну и смыслу страницы.<br />
+<strong>Постусловия:</strong><br />
+Не требуется.  </p>
+<hr />
+<p><a id="tc-027"></a>
+<strong>ID: ТС-027</strong><br />
+<strong>Заголовок:</strong> Проверка читаемости текста на кнопке "Подтвердить отправку"<br />
+<strong>Приоритет:</strong> Medium<br />
+Серьёзность: Minor (UI / Accessibility)<br />
+Страница: https://guru.qahacking.ru/index.php/about<br />
+<strong>Предусловия:</strong><br />
+1. Открыта страница https://guru.qahacking.ru/index.php/about.<br />
+2. Страница полностью загружена, форма бронирования видна.<br />
+<strong>Шаги:</strong><br />
+1. Пролистать страницу до формы бронирования.<br />
+2. Найти кнопку "Подтвердить отправку".<br />
+3. Обратить внимание на её текст без наведения курсора.<br />
+4. Навести курсор на кнопку и сравнить визуальное состояние текста.<br />
+<strong>Ожидаемый результат:</strong><br />
+Текст на кнопке читаем без наведения курсора.<br />
+Контраст и цвет текста соответствуют требованиям доступности (WCAG).<br />
+При наведении курсора допускается лёгкий эффект (например, изменение фона), но текст остаётся читаемым.<br />
+Тип: UI / Accessibility  </p>
+<hr />
+<p><a id="tc-028"></a>
+<strong>ID: TC-028</strong><br />
+<strong>Заголовок:</strong> Проверка работы кнопки "Подтвердить отправку"  <br />
+<strong>Приоритет:</strong> High<br />
+<strong>Серьёзность:</strong> Major (Functional Blocker)<br />
+<strong>Предусловия:</strong><br />
+1. Открыта страница https://guru.qahacking.ru/index.php/about.<br />
+2. Страница полностью загружена, форма бронирования доступна.<br />
+3. Все обязательные поля формы заполнены корректно.<br />
+<strong>Шаги:</strong> <br />
+1. Пролистать страницу до формы бронирования.<br />
+2. Заполнить все поля валидными данными.<br />
+3. Нажать кнопку "Подтвердить отправку".<br />
+4. Наблюдать поведение страницы.<br />
+<strong>Ожидаемый результат:</strong> <br />
+Форма отправляется на сервер, либо отображается сообщение об успешной отправке.<br />
+В случае ошибки — показывается сообщение об ошибке (“Проверьте введённые данные”).  </p>
+<hr />
+<h3 id="_4">Форма бронирования</h3>
+<p><strong>ID: TC-029</strong><br />
+<strong>Заголовок:</strong> Дымовой тест формы бронирования
+<strong>Предусловия:</strong> Открыта форма бронирования на странице https://guru.qahacking.ru/index.php/about, все обязательные поля заполнены корректно<br />
+<strong>Шаги:</strong><br />
+1. Заполнить все поля корректными данными:<br />
+   - Имя, Email, Телефон<br />
+   - Дата: выбрать ближайшую доступную<br />
+   - Вид питомца: выбрать из списка<br />
+2. Нажать кнопку "Забронировать".<br />
+<strong>Ожидаемый результат:</strong><br />
+Форма успешно отправляется, отображается сообщение об успешной отправке.<br />
+<strong>Постусловия:</strong> Нет  </p>
+<hr />
+<p><strong>ID: TC-030</strong> 
+<strong>Заголовок:</strong> Проверка валидации обязательных полей формы бронирования<br />
+<strong>Предусловия:</strong> Открыта страница https://guru.qahacking.ru/index.php/about<br />
+<strong>Шаги:</strong><br />
+1. Оставить все обязательные поля пустыми.<br />
+2. Нажать кнопку "Забронировать".<br />
+<strong>Ожидаемый результат:</strong><br />
+Появляются сообщения об ошибках для всех обязательных полей.<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<hr />
+<p><strong>ID: TC-031</strong><br />
+<strong>Заголовок:</strong> Проверка валидации поля Email  <br />
+<strong>Предусловия:</strong> Открыта страница /about<br />
+<strong>Шаги:</strong><br />
+1. Ввести в поле Email некорректный адрес, например: "test@".<br />
+2. Нажать "Забронировать".<br />
+<strong>Ожидаемый результат:</strong><br />
+Появляется сообщение об ошибке: "Введите корректный email".<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<hr />
+<p><strong>ID: TC-032</strong> <br />
+<strong>Заголовок:</strong> Проверка выбора радиокнопки «Кобель»  <br />
+<strong>Предусловия:</strong> Открыта страница https://guru.qahacking.ru/index.php/about, форма бронирования видна<br />
+<strong>Шаги:</strong><br />
+1. Найти блок «Желаемый пол щенка».<br />
+2. Нажать на радиокнопку «Кобель».<br />
+<strong>Ожидаемый результат:</strong><br />
+Радиокнопка «Кобель» становится выбранной и отображается активной.<br />
+<strong>Постусловия:</strong> Радиокнопка «Кобель» остаётся выбранной  </p>
+<hr />
+<p><strong>ID: TC-033</strong><br />
+<strong>Заголовок:</strong> Проверка одновременного выбора более одной радиокнопки в блоке «Желаемый пол щенка»<br />
+<strong>Предусловия:</strong> Открыта страница https://guru.qahacking.ru/index.php/about, форма бронирования видна<br />
+<strong>Шаги:</strong><br />
+1. Найти блок радиокнопок «Желаемый пол щенка».<br />
+2. Нажать на радиокнопку «Кобель».<br />
+3. Не снимая выбора, нажать на радиокнопку «Сука».<br />
+<strong>Ожидаемый результат:</strong><br />
+Активной остаётся только одна выбранная радиокнопка — «Сука». Предыдущая («Кобель») автоматически снимается.<br />
+<strong>Постусловия:</strong> Выбрана только одна радиокнопка (в данном случае — «Сука»)  </p>
+<hr />
+<p><a id="tc-034"></a>
+<strong>ID: TC-034</strong><br />
+<strong>Заголовок:</strong> Проверка корректного ввода номера телефона<br />
+<strong>Предусловия:</strong> Открыта страница https://guru.qahacking.ru/index.php/about, форма бронирования видна<br />
+<strong>Шаги:</strong><br />
+1. Найти поле «Телефон» в форме бронирования.<br />
+2. Ввести корректный номер телефона.<br />
+3. Нажать кнопку «Забронировать».<br />
+<strong>Ожидаемый результат:</strong><br />
+Поле «Телефон» принимает данные, отображает введённый номер корректно, форма успешно отправляется (если остальные поля заполнены).<br />
+<strong>Постусловия:</strong> Очистить поле «Телефон» после теста  </p>
+<hr />
+<p><strong>ID: TC-035</strong><br />
+<strong>Заголовок:</strong> Проверка некорректного ввода номера телефона<br />
+<strong>Предусловия:</strong> Открыта страница /about, форма бронирования видна<br />
+<strong>Шаги:</strong><br />
+1. Найти поле «Телефон».<br />
+2. Ввести некорректные данные, например: abcdef или 12345.<br />
+3. Нажать кнопку «Забронировать».<br />
+<strong>Ожидаемый результат:</strong><br />
+Поле «Телефон» отклоняет некорректные данные или отображает сообщение об ошибке (если валидация предусмотрена). В нашем случае — форма отправляется, но это считается дефектом, так как валидация отсутствует.<br />
+<strong>Постусловия:</strong> Очистить поле после теста  </p>
+<hr />
+<p><a id="tc-036"></a>
+<strong>ID: TC-036</strong><br />
+<strong>Заголовок:</strong> Проверка выбора даты в поле "Когда хотите забрать"<br />
+<strong>Предусловия:</strong> Открыта страница /about, форма бронирования видна<br />
+<strong>Шаги:</strong><br />
+1. Найти поле «Когда хотите забрать».<br />
+2. Кликнуть по полю — убедиться, что появляется календарь или поле ввода очищается.<br />
+3. Ввести или выбрать новую дату.<br />
+<strong>Ожидаемый результат:</strong> При клике на поле предыдущее значение (если было) очищается. Пользователь может ввести или выбрать новую дату без ошибок. Введённая дата корректно отображается в поле.<br />
+<strong>Постусловия:</strong> Очистить поле  </p>
+<hr />
+<p><strong>ID: TC-037</strong><br />
+<strong>Заголовок:</strong> Проверка ввода текста в поле «Особые пожелания»<br />
+<strong>Предусловия:</strong> Открыта странp.qahacking.ru/index.php/about, форма бронирования отображается<br />
+<strong>Шаги:</strong><br />
+1. Найти поле «Особые пожелания».<br />
+2. Ввести произвольный текст.<br />
+3. Нажать кнопку «Забронировать».<br />
+<strong>Ожидаемый результат:</strong><br />
+Поле принимает введённый текст, текст отображается полностью, отправка формы возможна.<br />
+<strong>Постусловия:</strong> Очистить поле  </p>
+<hr />
+<p><strong>ID: TC-038</strong><br />
+<strong>Заголовок:</strong> Проверка ввода текста длиной более 200 символов в поле «Особые пожелания»<br />
+<strong>Предусловия:</strong> Открыта страница https://guru.qahacking.ru/index.php/about, форма бронирования отображается<br />
+<strong>Шаги:</strong><br />
+1. Найти поле «Особые пожелания».<br />
+2. Проверить возможность ввода текста длиной более 200 символов.<br />
+3. Нажать кнопку «Забронировать».<br />
+<strong>Ожидаемый результат:</strong><br />
+Поле принимает введённый текст, текст отображается полностью, отправка формы возможна.<br />
+<strong>Постусловия:</strong> Очистить поле  </p>
+<hr />
+<p><strong>ID: TC-039</strong><br />
+<strong>Заголовок:</strong> Проверка выбора чекбокса «Маленький»<br />
+<strong>Предусловия:</strong> Открыта страница https://guru.qahacking.ru/index.php/about, форма бронирования видна<br />
+<strong>Шаги:</strong><br />
+1. Найти чекбокс «Маленький» в блоке «Размер собаки».<br />
+2. Нажать на чекбокс.<br />
+<strong>Ожидаемый результат:</strong><br />
+Чекбокс «Маленький» активируется (отображается галочка).<br />
+<strong>Постусловия:</strong> Снять чекбокс  </p>
+<hr />
+<p><strong>ID: TC-040</strong><br />
+<strong>Заголовок:</strong> Проверка выбора чекбокса «Средний»<br />
+<strong>Предусловия:</strong> Открыта страница https://guru.qahacking.ru/index.php/about, форма бронирования отображается<br />
+<strong>Шаги:</strong><br />
+1. Найти чекбокс «Средний».<br />
+2. Нажать на чекбокс.<br />
+<strong>Ожидаемый результат:</strong><br />
+Чекбокс «Средний» активируется.<br />
+<strong>Постусловия:</strong> Снять чекбокс  </p>
+<hr />
+<p><strong>ID: TC-041</strong><br />
+<strong>Заголовок:</strong> Проверка снятия выбора чекбокса «Маленький» повторным нажатием<br />
+<strong>Предусловия:</strong> Открыта страница https://guru.qahacking.ru/index.php/about, форма бронирования отображается, чекбокс «Маленький» выбран<br />
+<strong>Шаги:</strong><br />
+1. Нажать повторно на чекбокс «Маленький».<br />
+<strong>Ожидаемый результат:</strong><br />
+Чекбокс перестаёт быть активным.<br />
+<strong>Постусловия:</strong> Нет  </p>
+<hr />
+<p><a id="tc-042"></a>
+<strong>ID: TC-042</strong><br />
+<strong>Заголовок:</strong> Возмжность выбрать язык кликом по названию чекбокса "Русский" в форме бронирования<br />
+<strong>Предусловия:</strong> Открыта страница https://guru.qahacking.ru/index.php/about, форма бронирования отображается<br />
+<strong>Шаги:</strong><br />
+1. Найти пункт ""Языки на которых должна говорить собака"<br />
+2. Выбрать чекбокс "Русский" кликом по названию. 
+<strong>Ожидаемый результат:</strong><br />
+Чексбокс "Русский" активируется.<br />
+<strong>Постусловия:</strong> Снять чекбокс "Русский" </p>
+<hr />
+<p><strong>ID: TC-043</strong><br />
+<strong>Заголовок:</strong> Проверка отправки формы без выбора чекбокса «Размер собаки»<br />
+<strong>Предусловия:</strong> Открыта страница https://guru.qahacking.ru/index.php/about, обязательные поля формы заполнены корректно<br />
+<strong>Шаги:</strong><br />
+1. Не выбирать ни один размер.<br />
+2. Нажать «Забронировать».<br />
+<strong>Ожидаемый результат:</strong><br />
+Отображается ошибка валидации.<br />
+<strong>Постусловия:</strong> Нет  </p>
+<hr />
+<p><strong>ID: TC-044</strong><br />
+<strong>Заголовок:</strong> Проверка загрузки корректного файла<br />
+<strong>Предусловия:</strong> Открыта страница https://guru.qahacking.ru/index.php/about, форма бронирования отображается<br />
+<strong>Шаги:</strong><br />
+1. Нажать кнопку «Выбрать файл».<br />
+2. В окне выбора файлов выбрать изображение формата .jpg размером до 5 МБ.<br />
+<strong>Ожидаемый результат:</strong><br />
+Имя выбранного файла отображается рядом с полем, ошибок нет.<br />
+<strong>Постусловия:</strong> Удалить выбранный файл при необходимости  </p>
+<hr />
+<p><strong>ID: TC-045</strong><br />
+<strong>Заголовок:</strong> Проверка ограничения по формату файла<br />
+<strong>Предусловия:</strong> Открыта страница https://guru.qahacking.ru/index.php/about<br />
+<strong>Шаги:</strong><br />
+1. Нажать кнопку «Выбрать файл».<br />
+2. Выбрать файл формата .exe или .txt.<br />
+<strong>Ожидаемый результат:</strong><br />
+Появляется сообщение об ошибке или запрет на выбор файла.<br />
+<strong>Постусловия:</strong> Очистить выбранный файл  </p>
+<hr />
+<p><strong>ID: TC-046</strong><br />
+<strong>Заголовок:</strong> Проверка ограничения по размеру файла<br />
+<strong>Предусловия:</strong> Открыта страница https://guru.qahacking.ru/index.php/about<br />
+<strong>Шаги:</strong><br />
+1. Нажать кнопку «Выбрать файл».<br />
+2. Выбрать файл размером больше 10 МБ.<br />
+<strong>Ожидаемый результат:</strong><br />
+Появляется сообщение об ошибке или запрет на выбор файла.<br />
+<strong>Постусловия:</strong> Очистить поле  </p>
+<hr />
+<p><a id="tc-047"></a>
+<strong>ID: TC-047</strong><br />
+<strong>Заголовок:</strong> Проверка выпадающего меню (select) для выбора города в форме бронирования<br />
+<strong>Предусловия:</strong> Открыта форма бронирования на странице https://guru.qahacking.ru/index.php/about, обязательные поля пусты<br />
+<strong>Шаги:</strong><br />
+1. Пролистать страницу до формы бронирования.
+2. Найти элемент «Город» (поле выбора города / dropdown).
+3. Кликнуть по полю «Город» или по иконке-стрелке раскрытия.<br />
+<strong>Ожидаемый результат:</strong><br />
+При клике по полю «Город» или по стрелке появляется выпадающий список с вариантами городов.<br />
+<strong>Постусловия:</strong> Нет  </p>
+<h3 id="_5">Страница «Блог Джесси»</h3>
+<p><strong>ID: TC-048</strong><br />
+<strong>Заголовок:</strong> Проверка загрузки страницы «Блог Джесси»<br />
+<strong>Предусловия:</strong> Открыт браузер<br />
+<strong>Шаги:</strong><br />
+1. Перейти по адресу https://guru.qahacking.ru/index.php/news.<br />
+<strong>Ожидаемый результат:</strong><br />
+Страница загружается без ошибок (HTTP 200), отображается список новостей или сообщение «Новостей нет», нет явных ошибок верстки.<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<hr />
+<p><a id="tc-049"></a>
+<strong>ID: TC-049</strong><br />
+<strong>Заголовок:</strong> Переход по баннер-линку статьи «Давно просил домашнее животное»<br />
+<strong>Предусловия:</strong> Открыта страница https://guru.qahacking.ru/index.php/news<br />
+<strong>Шаги:</strong><br />
+1. В списке новостей найти баннер-линк статьи с заголовком «Давно просил домашнее животное».<br />
+2. Кликнуть по баннеру (по изображению или заголовку).<br />
+<strong>Ожидаемый результат:</strong><br />
+Открывается статья «Давно просил домашнее животное» — заголовок и содержание соответствуют выбранной новости.<br />
+<strong>Постусловия:</strong> Нет  </p>
+<hr />
+<p><a id="tc-050"></a>
+<strong>ID: TC-050</strong><br />
+<strong>Заголовок:</strong> Проверка блока «Популярное»<br />
+<strong>Предусловия:</strong> Открыта страница https://guru.qahacking.ru/index.php/news<br />
+<strong>Шаги:</strong><br />
+1. Прокрутить страницу вниз, чтобы увидеть правую боковую часть страницы.<br />
+2. Найти на странице боковой блок с заголовком «Популярное».<br />
+3. Проверить, корректно ли отображаются элементы внутри блока (список популярных новостей, изображения, заголовки).<br />
+<strong>Ожидаемый результат:</strong><br />
+Блок «Популярное» присутствует на странице и корректно отображается.<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<hr />
+<p><a id="tc-051"></a>
+<strong>ID: TC-051</strong><br />
+<strong>Заголовок:</strong> Проверка отображения заголовка блока «Популярное»<br />
+<strong>Предусловия:</strong> Открыта страница https://guru.qahacking.ru/index.php/news<br />
+<strong>Шаги:</strong><br />
+1. Найти на странице боковой блок с заголовком «Популярное».<br />
+2. Проверить, корректно ли отображаются элементы внутри блока (список популярных новостей, изображения, заголовки).<br />
+<strong>Ожидаемый результат:</strong><br />
+Заголовок блока корректно отображается.<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<h3 id="_6">Магазин</h3>
+<p><strong>ID: TC-052</strong><br />
+<strong>Заголовок:</strong> Проверка отображения карточек товара (Product cards)<br />
+<strong>Предусловия:</strong> Страница /magazin открыта<br />
+<strong>Шаги:</strong><br />
+1. Просмотреть первый экран и список карточек товара.<br />
+2. Для нескольких карточек проверить наличие: изображения, названия, цены, кнопки «Купить» или «В корзину».<br />
+<strong>Ожидаемый результат:</strong><br />
+Каждая карточка содержит изображение (не битое), читаемое название, корректную цену и активную кнопку добавления/показa.<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<hr />
+<p><strong>ID: TC-053</strong><br />
+<strong>Заголовок:</strong> Проверка клика по карточке товара — переход на страницу товара<br />
+<strong>Предусловия:</strong> /magazin открыта, есть хотя бы одна карточка товара<br />
+<strong>Шаги:</strong><br />
+1. Нажать по названию или изображению первой карточки товара.<br />
+2. Проверить открывшуюся страницу товара.<br />
+<strong>Ожидаемый результат:</strong><br />
+Открывается страница конкретного товара; URL изменился, отображаются название, цена, описание и кнопка покупки.<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<hr />
+<p><strong>ID: TC-054</strong><br />
+<strong>Заголовок:</strong> Проверка поиска товаров на странице магазина<br />
+<strong>Предусловия:</strong> /magazin открыта, на сайте есть товары с уникальными названиями<br />
+<strong>Шаги:</strong><br />
+1. Ввести в поисковое поле слово/фразу, относящуюся к существующему товару.<br />
+2. Нажать Enter или кнопку поиска.<br />
+<strong>Ожидаемый результат:</strong><br />
+Список результатов содержит товары, релевантные запросу; если ничего не найдено — показано понятное сообщение «Ничего не найдено».<br />
+<strong>Постусловия:</strong> Очистить поисковую строку  </p>
+<hr />
+<p><strong>ID: TC-055</strong><br />
+<strong>Заголовок:</strong> Проверка фильтрации (по названию) на странице магазина<br />
+<strong>Предусловия:</strong> /magazin открыта, на сайте доступны фильтры/сортировка<br />
+<strong>Шаги:</strong><br />
+1. Применить фильтр по названию.<br />
+2. Применить сортировку по убыванию.<br />
+3. Проверить список отображаемых товаров.<br />
+<strong>Ожидаемый результат:</strong><br />
+После применения фильтров/сортировки отображаются только товары, соответствующие условиям; порядок соответствует выбранной сортировке.<br />
+<strong>Постусловия:</strong> Сбросить фильтры  </p>
+<hr />
+<p><strong>ID: TC-056</strong><br />
+<strong>Заголовок:</strong> Проверка добавления товара в корзину с карточки (быстрая покупка)<br />
+<strong>Предусловия:</strong> /magazin открыта, на странице есть кнопка «В корзину» в карточке товара<br />
+<strong>Шаги:</strong><br />
+1. Нажать кнопку «В корзину» у выбранной карточки товара.<br />
+2. Открыть корзину (или проверить всплывающее уведомление).<br />
+<strong>Ожидаемый результат:</strong><br />
+Товар успешно добавлен в корзину; в корзине отображается корректный товар, цена и количество; расчёт суммы верный.<br />
+<strong>Постусловия:</strong> Удалить тестовый товар из корзины  </p>
+<hr />
+<p><strong>ID: TC-057</strong><br />
+<strong>Заголовок:</strong> Негативный тест — добавление в корзину без обязательных опций (размер/цвет)<br />
+<strong>Предусловия:</strong> /magazin открыта, выбран товар с обязательными опциями (если есть)<br />
+<strong>Шаги:</strong><br />
+1. На карточке товара нажать «В корзину», не выбрав обязательную опцию (например, размер).<br />
+<strong>Ожидаемый результат:</strong><br />
+Появляется валидационное сообщение/подсказка с требованием выбрать опцию; товар не добавлен. Если система добавляет — зафиксировать как дефект.<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<hr />
+<p><strong>ID:TC-058</strong><br />
+<strong>Заголовок:</strong> Проверка подгрузки товаров (Load more / Pages)<br />
+<strong>Предусловия:</strong> На странице товаров больше элементов, чем показывается на одной странице<br />
+<strong>Шаги:</strong><br />
+1. Пролистать страницу вниз.<br />
+2. Нажать «Загрузить ещё» или перейти на следующую страницу через пагинацию.<br />
+<strong>Ожидаемый результат:</strong><br />
+Появляются дополнительные товары; кнопка работает без ошибок; URL или состояние обновляется корректно (если применимо).<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<hr />
+<p><strong>ID:TC-059</strong><br />
+<strong>Заголовок:</strong> Проверка адаптивности страницы магазина (мобильный/планшет)<br />
+<strong>Предусловия:</strong> Открыта страница /magazin, DevTools → Device Toolbar включён<br />
+<strong>Шаги:</strong><br />
+1. Включить режим iPhone (375x812).<br />
+2. Проверить отображение карточек, меню фильтров, кнопки «В корзину».<br />
+3. Переключиться на планшет (768x1024) и повторить.<br />
+<strong>Ожидаемый результат:</strong><br />
+Элементы правильно перестраиваются под экран; нет горизонтальной прокрутки; кнопки и фильтры доступны и кликабельны.<br />
+<strong>Постусловия:</strong> Выключить Device Toolbar  </p>
+<h3 id="_7">Футер</h3>
+<p><strong>ID: TC-060</strong><br />
+<strong>Заголовок:</strong> Проверка наличия и отображения футера на всех страницах сайта<br />
+<strong>Предусловия:</strong> Любая страница сайта открыта<br />
+<strong>Шаги:</strong><br />
+1. Прокрутить страницу до конца.<br />
+2. Обратить внимание на футер.<br />
+<strong>Ожидаемый результат:</strong><br />
+Футер присутствует и видим на всех страницах. Нет наложений или обрезанных элементов.<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<hr />
+<p><a id="tc-061"></a>
+<strong>ID: TC-061</strong><br />
+<strong>Заголовок:</strong> Проверка корректности ссылок на социальные сети<br />
+<strong>Предусловия:</strong> Футер виден на странице<br />
+<strong>Шаги:</strong><br />
+1. Нажать на иконки социальных сетей (VK, Telegram, Instagram и т.д.).<br />
+<strong>Ожидаемый результат:</strong><br />
+Открываются правильные внешние страницы в новой вкладке.<br />
+<strong>Постусловия:</strong> Закрыть новые вкладки  </p>
+<hr />
+<p><a id="tc-062"></a>
+<strong>ID: TC-062</strong><br />
+<strong>Заголовок:</strong> Проверка корректной подписки на рассылку при вводе валидного email<br />
+<strong>Предусловия:</strong><br />
+1. Открыта главная страница https://guru.qahacking.ru/.<br />
+2. Пользователь находится в нижней части страницы (футер).<br />
+<strong>Шаги:</strong><br />
+1. Пролистать страницу до футера.<br />
+2. Найти блок “Подпишитесь на рассылку лучших фотографий”.<br />
+3. Ввести в поле валидный email, например <code>test@example.com</code>.<br />
+4. Нажать кнопку <strong>«Подписаться»</strong>.<br />
+<strong>Ожидаемый результат:</strong><br />
+- Система принимает email.<br />
+- Отображается сообщение о успешной подписке (например, “Вы успешно подписались”).<br />
+- Ошибки валидации не отображаются.<br />
+<strong>Постусловия:</strong><br />
+Email добавлен в список подписчиков (если предусмотрено).  </p>
+<hr />
+<p><strong>ID: TC-063</strong><br />
+<strong>Заголовок:</strong> Проверка обработки невалидного email<br />
+<strong>Предусловия:</strong><br />
+1. Открыта главная страница https://guru.qahacking.ru/.<br />
+2. Пользователь находится в футере.<br />
+<strong>Шаги:</strong><br />
+1. Ввести в поле некорректный email, например:<br />
+   - <code>test@</code><br />
+   - <code>test.com</code><br />
+   - <code>@example.com</code><br />
+2. Нажать кнопку <strong>«Подписаться»</strong>.<br />
+<strong>Ожидаемый результат:</strong><br />
+- Отображается сообщение об ошибке (“Введите корректный email”).<br />
+- Подписка не выполняется.<br />
+- Страница не перезагружается.<br />
+<strong>Постусловия:</strong><br />
+Данные не сохраняются в системе.  </p>
+<hr />
+<p><strong>ID: TC-064</strong> <br />
+<strong>Заголовок:</strong> Проверка реакции при отправке формы без ввода email<br />
+<strong>Предусловия:</strong><br />
+1. Открыта страница https://guru.qahacking.ru/.<br />
+2. Пользователь находится в футере.<br />
+<strong>Шаги:</strong><br />
+1. Оставить поле “Email” пустым.<br />
+2. Нажать кнопку <strong>«Подписаться»</strong>.<br />
+<strong>Ожидаемый результат:</strong><br />
+- Подписка не выполняется.<br />
+- Отображается сообщение “Поле обязательно для заполнения” или аналогичное.<br />
+<strong>Постусловия:</strong><br />
+Нет изменений в данных.  </p>
+<hr />
+<p><strong>ID: TC-065</strong><br />
+<strong>Заголовок:</strong> Проверка успешной отправки формы вопроса при корректном заполнении всех полей<br />
+<strong>Предусловия:</strong><br />
+1. Открыта страница https://guru.qahacking.ru/.<br />
+2. Пользователь находится в разделе с формой "Send your question".<br />
+<strong>Шаги:</strong><br />
+1. Ввести в поле <strong>Full name</strong>: <code>Иван Иванов</code>.<br />
+2. Ввести в поле <strong>E-mail</strong>: <code>test@example.com</code>.<br />
+3. Ввести в поле <strong>Mobile phone</strong>: <code>+79001234567</code>.<br />
+4. Ввести в поле <strong>Subject</strong>: <code>Вопрос по бронированию питомца</code>.<br />
+5. Нажать кнопку <strong>"Send"</strong>.<br />
+<strong>Ожидаемый результат:</strong><br />
+- Форма успешно отправляется.<br />
+- Отображается сообщение об успешной отправке ("Your message has been sent successfully" или аналогичное).<br />
+- Ошибки валидации не отображаются.<br />
+<strong>Постусловия:</strong><br />
+Форма очищается, данные отправлены на сервер (если реализовано).  </p>
+<hr />
+<p><strong>ID: TC-066</strong> <br />
+<strong>Заголовок:</strong> Проверка реакции формы при нажатии "Send" без заполнения полей<br />
+<strong>Предусловия:</strong><br />
+1. Открыта страница с формой "Send your question".<br />
+<strong>Шаги:</strong><br />
+1. Не заполнять ни одно поле формы.<br />
+2. Нажать кнопку <strong>"Send"</strong>.<br />
+<strong>Ожидаемый результат:</strong><br />
+- Отображаются сообщения об ошибке для обязательных полей.<br />
+- Форма не отправляется.<br />
+- Страница не перезагружается.<br />
+<strong>Постусловия:</strong><br />
+Нет изменений в системе.  </p>
+<hr />
+<p><strong>ID: TC-067</strong> <br />
+<strong>Заголовок:</strong> Проверка обработки некорректного email в форме вопроса<br />
+<strong>Предусловия:</strong><br />
+1. Открыта форма "Send your question".<br />
+<strong>Шаги:</strong><br />
+1. Ввести в поле <strong>Full name</strong>: <code>Иван Иванов</code>.<br />
+2. Ввести в поле <strong>E-mail</strong>: <code>ivanov.test</code> (без символа <code>@</code>).<br />
+3. Заполнить остальные поля корректно.<br />
+4. Нажать <strong>"Send"</strong>.<br />
+<strong>Ожидаемый результат:</strong><br />
+- Отображается сообщение об ошибке (“Введите корректный email”).<br />
+- Отправка формы не выполняется.<br />
+<strong>Постусловия:</strong><br />
+Форма остаётся на странице, данные не отправлены.  </p>
+<hr />
+<p><strong>ID: TC-068</strong><br />
+<strong>Заголовок:</strong> Проверка реакции на некорректный формат номера телефона<br />
+<strong>Предусловия:</strong><br />
+1. Открыта форма "Send your question".<br />
+<strong>Шаги:</strong><br />
+1. Ввести в поле <strong>Full name</strong>: <code>Иван Иванов</code>.<br />
+2. Ввести в поле <strong>E-mail</strong>: <code>test@example.com</code>.<br />
+3. Ввести в поле <strong>Mobile phone</strong>: <code>123abc</code>.<br />
+4. Ввести в поле <strong>Subject</strong>: <code>Тест телефона</code>.<br />
+5. Нажать <strong>"Send"</strong>.<br />
+<strong>Ожидаемый результат:</strong><br />
+- Появляется сообщение об ошибке (“Введите корректный номер телефона”).<br />
+- Отправка формы не выполняется.<br />
+<strong>Постусловия:</strong><br />
+Форма остаётся на странице.  </p>
+<hr />
+<p><strong>ID: TC-069</strong><br />
+<strong>Заголовок:</strong> Проверка реакции при отправке формы без заполнения поля "Subject"<br />
+<strong>Предусловия:</strong><br />
+1. Открыта форма "Send your question".<br />
+<strong>Шаги:</strong><br />
+1. Заполнить поля <strong>Full name</strong>, <strong>E-mail</strong>, <strong>Mobile phone</strong> корректными данными.<br />
+2. Оставить поле <strong>Subject</strong> пустым.<br />
+3. Нажать <strong>"Send"</strong>.<br />
+<strong>Ожидаемый результат:</strong><br />
+- Отображается сообщение об ошибке для поля Subject ("Поле обязательно для заполнения").<br />
+- Отправка не выполняется.<br />
+<strong>Постусловия:</strong><br />
+Форма остаётся на странице, данные не отправлены.  </p>
+<hr />
+<p><a id="tc-070"></a>
+<strong>ID: TC-070</strong><br />
+<strong>Заголовок:</strong> Проверка функциональности кнопки "Send" в форме обратной связи<br />
+<strong>Предусловия:</strong><br />
+1. Открыта страница https://guru.qahacking.ru/.<br />
+2. Пользователь находится в блоке с формой "Send your question".<br />
+3. Все обязательные поля формы заполнены корректными данными:<br />
+   - <strong>Full name:</strong> Иван Иванов<br />
+   - <strong>E-mail:</strong> test@example.com<br />
+   - <strong>Mobile phone:</strong> +79001234567<br />
+   - <strong>Subject:</strong> Тест работы кнопки<br />
+<strong>Шаги:</strong><br />
+1. Навести курсор на кнопку <strong>"Send"</strong>.<br />
+2. Проверить визуальную реакцию при наведении (изменение цвета, тени, курсора).<br />
+3. Нажать кнопку <strong>"Send"</strong>.<br />
+4. Отслеживать поведение страницы после нажатия.<br />
+<strong>Ожидаемый результат:</strong><br />
+- Кнопка кликабельна.<br />
+- После нажатия форма успешно отправляется.<br />
+- Отображается сообщение об успешной отправке (например, “Message sent successfully”).<br />
+- Ошибки в консоли браузера отсутствуют.<br />
+<strong>Постусловия:</strong><br />
+Форма очищается, данные отправлены на сервер (если реализовано).  </p>
+<hr />
+<p><strong>ID: TC-071</strong><br />
+<strong>Заголовок:</strong> Проверка визуального отклика кнопки "Send" при наведении курсора (hover)<br />
+<strong>Предусловия:</strong><br />
+1. Открыта страница https://guru.qahacking.ru/.<br />
+2. Пользователь находится в блоке с формой "Send your question".<br />
+3. Страница полностью загружена, элементы формы видимы.<br />
+<strong>Шаги:</strong><br />
+1. Найти кнопку <strong>"Send"</strong> в форме.<br />
+2. Навести курсор мыши на кнопку (без нажатия).<br />
+3. Наблюдать визуальные изменения кнопки.<br />
+4. (Дополнительно) Проверить стиль кнопки в DevTools → вкладка <strong>Elements</strong> → секция <strong>:hover</strong>.<br />
+<strong>Ожидаемый результат:</strong><br />
+- При наведении кнопка изменяет визуальное состояние (например, цвет фона, рамки или тени).<br />
+- Эффект отображается плавно, без задержек.<br />
+- После снятия курсора кнопка возвращается к исходному состоянию.<br />
+<strong>Постусловия:</strong><br />
+Кнопка остаётся в исходном состоянии после снятия курсора, функциональность не нарушена.  </p>
+<h3 id="devtools">DevTools</h3>
+<p><strong>ID: TC-072</strong><br />
+<strong>Заголовок:</strong> Проверка сетевых запросов на отсутствие больших ресурсов при загрузке главной страницы<br />
+<strong>Предусловия:</strong> Открыт браузер Chrome. Открыта вкладка DevTools (F12).<br />
+<strong>Шаги:</strong><br />
+1. Открыть DevTools → вкладка Network.<br />
+2. Включить Disable cache.<br />
+3. Обновить страницу https://guru.qahacking.ru/ (Ctrl+R).<br />
+4. В фильтре Network отсортировать по столбцу Status и просмотреть все запросы; затем отсортировать по Size (largest first).<br />
+5. Зафиксировать любые ресурсы &gt; 2 MB.<br />
+<strong>Ожидаемый результат:</strong><br />
+Нет отдельных ресурсов (изображений/скриптов/видео) существенно больших — каждый ресурс разумного размера (&lt; 2 MB) и не приводит к заметной задержке.<br />
+<strong>Постусловия:</strong> Не требуется. Примечание: если большие файлы — указать их имена и размеры в баг-репорте.  </p>
+<hr />
+<p><strong>ID: TC-073</strong><br />
+<strong>Заголовок:</strong> Проверка адаптивности ключевых блоков (hero, меню, кнопки) через Device Toolbar в DevTools<br />
+<strong>Предусловия:</strong> Открыт браузер, DevTools (F12) → включён Device Toolbar (Ctrl+Shift+M). Страница https://guru.qahacking.ru/ загружена.<br />
+<strong>Шаги:</strong><br />
+1. Включить Device Toolbar → выбрать iPhone X (375x812).<br />
+2. Обновить страницу в этом режиме.<br />
+3. Проверить отображение: hero-изображение, главное меню (гамбургер), кнопка «Подробнее о питомнике», форма (корректность ввода/кнопок).<br />
+4. Переключиться на iPad (768x1024) и повторить проверку.<br />
+5. Проверить отсутствие горизонтальной прокрутки (swipe влево/вправо) и видимость основных CTA.<br />
+<strong>Ожидаемый результат:</strong><br />
+Элементы не выходят за пределы экрана, нет горизонтальной прокрутки. Меню доступно (гамбургер работает), CTA видимы и кликабельны. Макет не «ломается» при смене размеров.<br />
+<strong>Постусловия:</strong> Выключить Device Toolbar.  </p>
+<hr />
+<p><strong>ID: TC-074</strong><br />
+<strong>Заголовок:</strong> Проверка консоли браузера на наличие ошибок<br />
+<strong>Заголовок:</strong> Проверка консоли на ошибки JavaScript<br />
+<strong>Предусловия:</strong> Открыта страница https://guru.qahacking.ru/<br />
+<strong>Шаги:</strong><br />
+1. Открыть DevTools → вкладка Console.<br />
+2. Перезагрузить страницу.<br />
+3. Проверить наличие ошибок (Error) и предупреждений (Warning).<br />
+<strong>Ожидаемый результат:</strong><br />
+В консоли отсутствуют ошибки JavaScript и критические предупреждения.<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<hr />
+<p><strong>ID: TC-075</strong><br />
+<strong>Заголовок:</strong> Проверка корректной загрузки изображений<br />
+<strong>Предусловия:</strong> Открыта страница с изображениями (например, /about или /magazin)<br />
+<strong>Шаги:</strong><br />
+1. Открыть DevTools → вкладка Network → фильтр Img.<br />
+2. Перезагрузить страницу.<br />
+3. Проверить статус загрузки изображений (все должны быть 200).<br />
+4. Визуально убедиться, что изображения отображаются.<br />
+<strong>Ожидаемый результат:</strong><br />
+Все изображения загружены корректно; нет ошибок 404 или битых ссылок.<br />
+<strong>Постусловия:</strong> Не требуется  </p>
+<hr />
+<p><strong>ID: TC-076</strong><br />
+<strong>Заголовок:</strong> Проверка адаптивности с помощью эмуляции устройств<br />
+<strong>Предусловия:</strong> Открыта страница https://guru.qahacking.ru/<br />
+<strong>Шаги:</strong><br />
+1. Открыть DevTools → включить Device Toolbar (Ctrl+Shift+M).<br />
+2. Выбрать устройства: iPhone 12, iPad, Galaxy S20.<br />
+3. Проверить корректность отображения навигации, изображений, текста и кнопок.<br />
+<strong>Ожидаемый результат:</strong><br />
+Контент адаптируется под размер экрана, элементы не обрезаны, нет горизонтальной прокрутки.<br />
+<strong>Постусловия:</strong> Вернуть в обычный режим просмотра  </p>
+<h2 id="-_3">Баг-репорты</h2>
+<p><strong>Bug Report — Некорректное отображение изображения в блоке "Наш главный производитель"</strong><br />
+<strong>ID:</strong> BUG-001<br />
+<strong>Заголовок:</strong> Одно из изображений не отображается в карусели блока "Наш главный производитель"<br />
+<strong>Страница:</strong> https://guru.qahacking.ru/<br />
+<strong>Описание:</strong><br />
+При пролистывании карусели в блоке "Наш главный производитель" одно из изображений не загружается — отображается пустое пространство или иконка отсутствующей картинки.<br />
+<strong>Предусловия:</strong><br />
+1. Открыта главная страница сайта https://guru.qahacking.ru/.<br />
+2. Страница полностью загружена.<br />
+<strong>Шаги для воспроизведения:</strong><br />
+1. Пролистать страницу до блока <strong>"Наш главный производитель"</strong>.<br />
+2. Используя стрелки навигации, пролистать изображения в карусели.<br />
+3. Обратить внимание на все слайды.<br />
+<strong>Фактический результат:</strong><br />
+- На одном из слайдов изображение не отображается.<br />
+- Видна пустая область или стандартная иконка "изображение не найдено".<br />
+<strong>Ожидаемый результат:</strong><br />
+- Все изображения в карусели отображаются корректно.<br />
+- Отсутствуют пустые блоки или ошибки загрузки изображений.<br />
+<strong>Окружение:</strong><br />
+- ОС: Windows 10<br />
+- Браузер: Google Chrome 129.0<br />
+- Разрешение экрана: 1920x1080<br />
+<strong>Приоритет:</strong> Medium<br />
+<strong>Серьёзность:</strong> Minor (UI)<br />
+<strong>Связанный тест-кейс:</strong> <a href="#tc-009">TC-009 — Проверка отображения карусели фотографий на главной странице</a>   </p>
+<hr />
+<p><strong>Bug Report — Некорректный текст в заголовке страницы "About"</strong><br />
+<strong>ID:</strong> BUG-002<br />
+<strong>Заголовок:</strong> Заголовок на странице /about отображается неверно<br />
+<strong>Страница:</strong> https://guru.qahacking.ru/index.php/about<br />
+<strong>Описание:</strong><br />
+В верхней части страницы вместо корректного заголовка отображается placeholder-текст "Напишите какой-то текст".<br />
+<strong>Предусловия:</strong><br />
+1. Открыта страница https://guru.qahacking.ru/index.php/about.<br />
+2. Страница полностью загружена.<br />
+<strong>Шаги для воспроизведения:</strong><br />
+1. Перейти на страницу /about.<br />
+2. Обратить внимание на верхнюю часть страницы (header/hero-блок).<br />
+<strong>Фактический результат:</strong><br />
+- В верхнем блоке отображается текст <strong>"Напишите какой-то текст"</strong>, который является placeholder и не соответствует дизайну или контенту.<br />
+<strong>Ожидаемый результат:</strong><br />
+- В верхней части страницы отображается корректный заголовок/текст согласно макету или требованиям.<br />
+<strong>Окружение:</strong><br />
+- ОС: Windows 10<br />
+- Браузер: Google Chrome 129.0<br />
+- Разрешение экрана: 1920x1080<br />
+<strong>Приоритет:</strong> Medium<br />
+<strong>Серьёзность:</strong> Minor (UI/Content) <br />
+<strong>Дополнительно:</strong><br />
+- Проверить исходный HTML и CMS-редактор для корректного текста.<br />
+- В DevTools -&gt; Elements можно увидеть, что текст является placeholder.<br />
+<strong>Связанный тест-кейс:</strong> <a href="#tc-026">TC-026 — Проверка заголовка на странице About</a> </p>
+<hr />
+<p><strong>Bug Report — Поле "Телефон" принимает меньше символов, чем указано в описании</strong><br />
+<strong>ID:</strong> BUG-003<br />
+<strong>Заголовок:</strong> Поле "Телефон" в форме бронирования принимает только 10 символов вместо 12<br />
+<strong>Приоритет:</strong> High<br />
+<strong>Серьёзность:</strong> Medium (Validation / UX issue)<br />
+<strong>Страница:</strong> https://guru.qahacking.ru/index.php/about<br />
+<strong>Описание:</strong><br />
+В форме бронирования под полем <strong>"Телефон"</strong> указано требование: <em>«не больше 12 символов»</em>, однако фактически поле позволяет ввести только 10 символов.<br />
+Из-за этого невозможно ввести корректный номер телефона в формате <strong>+7 000 000 00 00</strong>, что нарушает требования валидации.<br />
+<strong>Предусловия:</strong><br />
+1. Открыта страница https://guru.qahacking.ru/index.php/about.<br />
+2. Страница загружена, форма бронирования видима.<br />
+<strong>Шаги для воспроизведения:</strong><br />
+1. Пролистать страницу до формы бронирования.<br />
+2. В поле <strong>"Телефон"</strong> попытаться ввести 12 цифр (например, <code>+70000000000</code>).<br />
+3. Обратить внимание на то, сколько символов реально вводится.<br />
+<strong>Фактический результат:</strong><br />
+- Ввод ограничен 10 символами.<br />
+- Полный формат телефона (12 символов) ввести невозможно.<br />
+<strong>Ожидаемый результат:</strong><br />
+- Поле <strong>"Телефон"</strong> должно позволять вводить до <strong>12 символов</strong>, включая код страны и пробелы (например: <code>+7 000 000 00 00</code>).<br />
+- Валидация должна соответствовать тексту-подсказке под полем.<br />
+<strong>Окружение:</strong><br />
+- ОС: Windows 10<br />
+- Браузер: Google Chrome 129.0<br />
+- Разрешение экрана: 1920×1080<br />
+<strong>Связанный тест-кейс:</strong> <a href="#tc-034">TC-034 — Проверка ограничения количества символов в поле "Телефон"</a>  </p>
+<hr />
+<p><strong>Bug Report — Поле "Когда хотите забрать" не очищается при вводе пользовательской даты</strong><br />
+<strong>ID:</strong> BUG-004<br />
+<strong>Заголовок:</strong> Поле "Когда хотите забрать" не позволяет удалить автоматически подставленную дату перед вводом своей<br />
+<strong>Приоритет:</strong> Medium<br />
+<strong>Серьёзность:</strong> Medium (UX / Input validation issue)<br />
+<strong>Страница:</strong> https://guru.qahacking.ru/index.php/about<br />
+<strong>Описание:</strong><br />
+В форме бронирования в поле <strong>"Когда хотите забрать"</strong> по умолчанию отображается предзаполненная дата.<br />
+При попытке ввести свою дату вручную старая дата не удаляется, а символы добавляются к уже существующим, что мешает корректному вводу.<br />
+<strong>Предусловия:</strong><br />
+1. Открыта страница https://guru.qahacking.ru/index.php/about.<br />
+2. Страница загружена, форма бронирования доступна.<br />
+<strong>Шаги для воспроизведения:</strong><br />
+1. Пролистать страницу до формы бронирования.<br />
+2. В поле <strong>"Когда хотите забрать"</strong> удалить автоматически подставленную дату.<br />
+3. Попробовать ввести новую дату вручную.<br />
+<strong>Фактический результат:</strong><br />
+- Предыдущая дата не стирается.<br />
+- Символы новой даты добавляются к старым, либо фокус не позволяет редактировать поле.<br />
+<strong>Ожидаемый результат:</strong><br />
+- Пользователь должен иметь возможность очистить поле и ввести новую дату вручную.<br />
+- При вводе новой даты старая должна автоматически удаляться.<br />
+<strong>Окружение:</strong><br />
+- ОС: Windows 10<br />
+- Браузер: Google Chrome 129.0<br />
+- Разрешение экрана: 1920×1080 <br />
+<strong>Связанный тест-кейс:</strong> <a href="#tc-036">TC-036 — Проверка возможности редактирования даты в поле "Когда хотите забрать"</a>  </p>
+<hr />
+<p><strong>Bug Report — Невозможно выбрать язык кликом по названию</strong><br />
+<strong>ID:</strong> BUG-005<br />
+<strong>Заголовок:</strong> В форме бронирования нельзя выбрать язык кликом по названию, срабатывает соседний чекбокс<br />
+<strong>Приоритет:</strong> Medium<br />
+<strong>Серьёзность:</strong> Minor (UI/UX issue) <br />
+<strong>Страница:</strong> https://guru.qahacking.ru/index.php/about<br />
+<strong>Описание:</strong><br />
+В форме бронирования присутствует блок выбора языка общения.<br />
+При клике на название языка  "Русский" не происходит выбор нужного чекбокса.<br />
+Вместо этого отмечаются чекбоксы из предыдущего вопроса ("Размер питомца").<br />
+Выбор возможен только при клике непосредственно на сам чекбокс, что ухудшает удобство использования формы.<br />
+<strong>Предусловия:</strong><br />
+1. Открыта страница https://guru.qahacking.ru/index.php/about.<br />
+2. Страница полностью загружена.<br />
+<strong>Шаги для воспроизведения:</strong><br />
+1. Пролистать страницу до формы бронирования.<br />
+2. Найти блок выбора языка общения.<br />
+3. Нажать на текстовое название одного из языков (не на сам чекбокс).<br />
+<strong>Фактический результат:</strong><br />
+- Отмечается чекбокс в другом блоке ("Размер питомца").<br />
+- Клик по названию языка не выбирает нужный язык.<br />
+<strong>Ожидаемый результат:</strong><br />
+- Клик по названию языка должен активировать соответствующий чекбокс.<br />
+- При нажатии на текст должна срабатывать та же логика, что и при клике по самому чекбоксу.<br />
+<strong>Окружение:</strong><br />
+- ОС: Windows 10<br />
+- Браузер: Google Chrome 129.0<br />
+- Разрешение экрана: 1920×1080 <br />
+<strong>Связанный тест-кейс:</strong> <a href="#tc-042">TC-042 — Возмжность выбрать язык кликом по названию чекбокса "Русский" в форме бронирования</a>  </p>
+<hr />
+<p><strong>Bug Report — Выпадающее меню выбора города в форме бронирования не работает</strong><br />
+<strong>ID:</strong> BUG-006<br />
+<strong>Заголовок:</strong> Выпадающее меню (select) для выбора города в форме бронирования не раскрывается / не реагирует на клик<br />
+<strong>Приоритет:</strong> High<br />
+<strong>Серьёзность:</strong> Major (функциональный блокер формы)<br />
+<strong>Страница:</strong> https://guru.qahacking.ru/index.php/about<br />
+<strong>Описание:</strong><br />
+В форме бронирования присутствует поле выбора города (dropdown/select). При попытке открыть список городов (клик по полю или стрелке) выпадающее меню не раскрывается — выбор города невозможен. Это блокирует корректное заполнение формы и подачу данных о месте получения/доставки.<br />
+<strong>Предусловия:</strong><br />
+1. Открыта страница https://guru.qahacking.ru/index.php/about.<br />
+2. Страница полностью загружена, форма бронирования видима.<br />
+<strong>Шаги для воспроизведения:</strong><br />
+1. Пролистать страницу до формы бронирования.<br />
+2. Найти элемент «Город» (поле выбора города / dropdown).<br />
+3. Кликнуть по полю «Город» или по иконке-стрелке раскрытия. <br />
+<strong>Фактический результат:</strong><br />
+- При клике выпадающее меню не раскрывается, варианты городов не отображаются.<br />
+- Клик по полю не приводит к выбору города.<br />
+<strong>Ожидаемый результат:</strong><br />
+- При клике по полю «Город» или по стрелке появляется выпадающий список с вариантами городов.<br />
+- Можно выбрать один из городов; выбранное значение отображается в поле.<br />
+- Если опции подгружаются асинхронно — должен быть индикатор загрузки и корректная обработка ошибок (сообщение пользователю).<br />
+<strong>Окружение:</strong><br />
+- ОС: Windows 10 / macOS (проверено в нескольких браузерах)<br />
+- Браузеры: Google Chrome 129.0, Firefox Latest<br />
+- Разрешение экрана: 1920×1080<br />
+<strong>Постусловия:</strong><br />
+- После исправления проверить поведение в разных браузерах и на мобильных устройствах; убедиться, что выбранный город корректно передаётся при отправке формы.<br />
+<strong>Связанный тест-кейс:</strong> <a href="#tc-047">TC-047 — Проверка выпадающего меню (select) для выбора города в форме бронирования</a></p>
+<hr />
+<p><strong>Bug Report — Текст на кнопке "Подтвердить отправку" не читается без наведения курсора</strong><br />
+<strong>ID:</strong> BUG-007<br />
+<strong>Заголовок:</strong> На кнопке "Подтвердить отправку" текст не читается, пока не наведёшь курсор мыши<br />
+<strong>Приоритет:</strong> Medium<br />
+<strong>Серьёзность:</strong> Minor (UI / Accessibility issue)<br />
+<strong>Страница:</strong> https://guru.qahacking.ru/index.php/about<br />
+<strong>Описание:</strong><br />
+В форме бронирования питомца кнопка <strong>"Подтвердить отправку"</strong> имеет неконтрастный цвет текста.<br />
+Надпись на кнопке неразличима до тех пор, пока пользователь не наведёт курсор мыши — только тогда появляется читаемый текст.<br />
+Это нарушает принципы доступности (UX/UI accessibility) и может ввести пользователя в заблуждение, что кнопка неактивна.<br />
+<strong>Предусловия:</strong><br />
+1. Открыта страница https://guru.qahacking.ru/index.php/about.<br />
+2. Страница полностью загружена, форма бронирования видима.<br />
+<strong>Шаги для воспроизведения:</strong><br />
+1. Пролистать страницу до формы бронирования.<br />
+2. Найти кнопку <strong>"Подтвердить отправку"</strong>.<br />
+3. Обратить внимание на её внешний вид без наведения курсора.<br />
+4. Навести курсор на кнопку и сравнить визуальное состояние.<br />
+<strong>Фактический результат:</strong><br />
+- Текст на кнопке не читается (сливается с фоном или полностью отсутствует).<br />
+- При наведении курсора (hover) текст становится контрастным и видимым.<br />
+<strong>Ожидаемый результат:</strong><br />
+- Текст на кнопке <strong>"Подтвердить отправку"</strong> должен быть читаемым в обычном состоянии.<br />
+- Контраст и цвет текста должны соответствовать требованиям дизайна и принципам доступности (WCAG).<br />
+- При наведении допускается лёгкий визуальный эффект (например, изменение цвета фона), но без потери читаемости.<br />
+<strong>Окружение:</strong><br />
+- ОС: Windows 10<br />
+- Браузер: Google Chrome 129.0<br />
+- Разрешение экрана: 1920×1080<br />
+<strong>Связанный тест-кейс:</strong> <a href="#tc-027">TC-27 — Проверка читаемости текста на кнопке "Подтвердить отправку"</a>  </p>
+<hr />
+<p><strong>Bug Report — Кнопка "Подтвердить отправку" не выполняет действие при нажатии</strong><br />
+<strong>ID:</strong> BUG-008<br />
+<strong>Заголовок:</strong> После нажатия на кнопку "Подтвердить отправку" форма бронирования не отправляется<br />
+<strong>Приоритет:</strong> High<br />
+<strong>Серьёзность:</strong> Major (Functional Blocker)<br />
+<strong>Страница:</strong> https://guru.qahacking.ru/index.php/about<br />
+<strong>Описание:</strong><br />
+В форме бронирования питомца кнопка <strong>"Подтвердить отправку"</strong> не выполняет никаких действий при нажатии.<br />
+После клика не происходит ни отправки формы, ни появления сообщения об успешной или неуспешной отправке.<br />
+Пользователь не получает обратной связи, что вводит его в заблуждение относительно состояния формы.<br />
+<strong>Предусловия:</strong><br />
+1. Открыта страница https://guru.qahacking.ru/index.php/about.<br />
+2. Страница полностью загружена, форма бронирования доступна.<br />
+3. Все обязательные поля формы заполнены корректно.<br />
+<strong>Шаги для воспроизведения:</strong><br />
+1. Пролистать страницу до формы бронирования.<br />
+2. Заполнить все поля формы валидными данными.<br />
+3. Нажать кнопку <strong>"Подтвердить отправку"</strong>.<br />
+4. Наблюдать поведение страницы.<br />
+<strong>Фактический результат:</strong><br />
+- После клика на кнопку <strong>ничего не происходит</strong>.<br />
+- Сообщения об успешной или ошибочной отправке не отображаются.<br />
+- Вкладка <strong>Network</strong> в DevTools показывает, что запрос на сервер не отправляется.<br />
+<strong>Ожидаемый результат:</strong><br />
+- После нажатия на кнопку должна происходить проверка корректности введённых данных.<br />
+- Должен отправляться запрос на сервер или отображаться сообщение об успешной отправке (например, “Форма успешно отправлена”).<br />
+- В случае ошибки — сообщение об ошибке (“Проверьте введённые данные” и т.д.).<br />
+<strong>Окружение:</strong><br />
+- ОС: Windows 10<br />
+- Браузер: Google Chrome 129.0<br />
+- Разрешение экрана: 1920×1080 <br />
+<strong>Связанный тест-кейс:</strong>  <a href="#tc-028">ТС-28 — Проверка работы кнопки "Подтвердить отправку"</a></p>
+<hr />
+<p><strong>Bug Report — Неверная навигация при клике на статью в верхнем блоке</strong><br />
+<strong>ID:</strong> BUG-009<br />
+<strong>Заголовок:</strong> При клике на статью в верхнем блоке страницы "Блог Джесси" происходит переход на другую статью<br />
+<strong>Приоритет:</strong> High<br />
+<strong>Серьёзность:</strong> Major (Navigation / UX issue)<br />
+<strong>Страница:</strong> https://guru.qahacking.ru/index.php/news<br />
+<strong>Описание:</strong><br />
+На странице "Блог Джесси" в верхнем блоке (баннер/featured article) отображается статья <strong>“Давно просил домашнее животное” (август 15, 2022)</strong>.<br />
+При клике на баннер происходит переход <strong>не на эту статью</strong>, а на другую, что вводит пользователя в заблуждение.<br />
+Это нарушает логику навигации и UX сайта.<br />
+<strong>Предусловия:</strong><br />
+1. Открыта страница https://guru.qahacking.ru/index.php/news.<br />
+2. Страница полностью загружена.<br />
+<strong>Шаги для воспроизведения:</strong><br />
+1. Пролистать страницу до верхнего блока с актуальной статьей.<br />
+2. Кликнуть на баннер статьи “Давно просил домашнее животное”.<br />
+3. Наблюдать, на какую страницу происходит переход.<br />
+<strong>Фактический результат:</strong><br />
+- Пользователь переходит на другую статью, не соответствующую баннеру.<br />
+<strong>Ожидаемый результат:</strong><br />
+- При клике на баннер пользователь должен переходить на статью, которая отображена в блоке.<br />
+- Ссылка должна соответствовать заголовку и дате статьи.<br />
+<strong>Окружение:</strong><br />
+- ОС: Windows 10<br />
+- Браузеры: Google Chrome 129.0, Firefox Latest<br />
+- Разрешение экрана: 1920×1080<br />
+<strong>Связанный тест-кейс:</strong> <a href="#tc-049">TC-049 — Переход по баннер-линку статьи «Давно просил домашнее животное»</a>  </p>
+<hr />
+<p><strong>Bug Report — Опечатка в слове "Популярное"</strong><br />
+<strong>ID:</strong> BUG-010<br />
+<strong>Заголовок:</strong> В блоке на странице сайта слово "Популярное" написано с ошибкой<br />
+<strong>Приоритет:</strong> Low<br />
+<strong>Серьёзность:</strong> Minor (UI / Content)<br />
+<strong>Страница:</strong> https://guru.qahacking.ru/index.php/news<br />
+<strong>Описание:</strong><br />
+В блоке <strong>"Популярное"</strong> на странице сайта (например, на странице "Блог Джесси") слово написано с опечаткой, что нарушает грамотность текста и ухудшает впечатление пользователя от сайта.<br />
+<strong>Предусловия:</strong><br />
+1. Открыта страница https://guru.qahacking.ru/index.php/news.<br />
+2. Страница полностью загружена.<br />
+<strong>Шаги для воспроизведения:</strong><br />
+1. Пролистать страницу до блока с заголовком <strong>"Популярное"</strong>.<br />
+2. Обратить внимание на написание слова.<br />
+<strong>Фактический результат:</strong><br />
+- Слово написано с ошибкой (например, пропущена или заменена буква).<br />
+<strong>Ожидаемый результат:</strong><br />
+- Слово должно быть написано корректно: <strong>"Популярное"</strong>.<br />
+<strong>Окружение:</strong><br />
+- ОС: Windows 10<br />
+- Браузеры: Google Chrome 129.0, Firefox Latest<br />
+- Разрешение экрана: 1920×1080<br />
+<strong>Связанный тест-кейс:</strong> <a href="#tc-050">TC-050 — Проверка отображения заголовка блока «Популярное»</a></p>
+<hr />
+<p><strong>Bug Report — Блок "Популярное" вращается и трудно читается</strong><br />
+<strong>ID:</strong> BUG-011<br />
+<strong>Заголовок:</strong> Блок "Популярное" вращается, что затрудняет чтение<br />
+<strong>Страница:</strong> https://guru.qahacking.ru/index.php/news<br />
+<strong>Описание:</strong><br />
+Блок <strong>"Популярное"</strong> на странице сайта содержит прокручивающийся (анимированный) текст.<br />
+Из-за постоянного вращения слайдера пользователь не успевает прочитать заголовки статей, что ухудшает восприятие информации и UX.<br />
+<strong>Предусловия:</strong><br />
+1. Открыта страница https://guru.qahacking.ru/index.php/news.<br />
+2. Страница полностью загружена.<br />
+<strong>Шаги для воспроизведения:</strong><br />
+1. Пролистать страницу до блока <strong>"Популярное"</strong>.<br />
+2. Наблюдать за прокруткой / вращением текста.<br />
+3. Попытаться прочитать заголовки статей.<br />
+<strong>Фактический результат:</strong><br />
+- Текст постоянно движется или вращается.<br />
+- Пользователь не успевает прочитать заголовки полностью.<br />
+<strong>Ожидаемый результат:</strong><br />
+- Текст должен быть статичным или двигаться медленно, позволяя прочитать заголовки.<br />
+- Анимация не должна мешать восприятию информации.<br />
+<strong>Окружение:</strong><br />
+- ОС: Windows 10<br />
+- Браузеры: Google Chrome 129.0, Firefox Latest<br />
+- Разрешение экрана: 1920×1080<br />
+<strong>Приоритет:</strong> Medium<br />
+<strong>Серьёзность:</strong> Minor (UX / Accessibility issue)<br />
+<strong>Связанный тест-кейс:</strong> <a href="#tc-051">TC-051 — Проверка блока «Популярное»</a>  </p>
+<hr />
+<p><strong>Bug Report — Ссылка "Советы" в хедере не работает</strong><br />
+<strong>ID:</strong> BUG-012<br />
+<strong>Заголовок:</strong> При клике на ссылку "Советы по уходу..." в хедере сайта переход не осуществляется<br />
+<strong>Приоритет:</strong> High<br />
+<strong>Серьёзность:</strong> Major (Navigation / UX issue)<br />
+<strong>Страница:</strong> https://guru.qahacking.ru/<br />
+<strong>Описание:</strong><br />
+В хедере сайта присутствует ссылка <strong>"Советы"</strong>.<br />
+При клике на неё пользователь не переходит на соответствующую страницу или раздел. Это нарушает навигацию и UX сайта.<br />
+<strong>Предусловия:</strong><br />
+1. Открыта страница https://guru.qahacking.ru/.<br />
+2. Страница полностью загружена, хедер видим.<br />
+<strong>Шаги для воспроизведения:</strong><br />
+1. Пролистать страницу или оставить хедер на экране.<br />
+2. Кликнуть на ссылку <strong>"Советы"</strong>.<br />
+<strong>Фактический результат:</strong><br />
+- Переход на страницу или раздел не осуществляется.<br />
+- Ссылка визуально выглядит активной, но клики не работают.<br />
+<strong>Ожидаемый результат:</strong><br />
+- При клике пользователь должен переходить на соответствующую страницу или раздел с советами по уходу.<br />
+<strong>Окружение:</strong><br />
+- ОС: Windows 10<br />
+- Браузеры: Google Chrome 129.0, Firefox Latest<br />
+- Разрешение экрана: 1920×1080<br />
+<strong>Связанный тест-кейс:</strong> <a href="#tc-015">TC-015 — Проверка перехода по пункту подменю "Советы" в разделе "О нас"</a></p>
+<hr />
+<p><strong>Bug Report — Ошибка при попытке подписки на рассылку в футере</strong><br />
+<strong>ID:</strong> BUG-013<br />
+<strong>Заголовок:</strong> При попытке подписаться на рассылку в футере возникает ошибка<br />
+<strong>Приоритет:</strong> High<br />
+<strong>Серьёзность:</strong> Major (Functional / UX issue)<br />
+<strong>Страница:</strong> https://guru.qahacking.ru/<br />
+<strong>Описание:</strong><br />
+В футере сайта есть форма подписки на рассылку <strong>"Подпишитесь на рассылку лучших фотографий"</strong>.<br />
+При вводе корректного email и нажатии кнопки <strong>"Подписаться"</strong> появляется ошибка, подписка не оформляется.<br />
+Пользователь не получает обратной связи о статусе подписки.<br />
+<strong>Предусловия:</strong><br />
+1. Открыта страница https://guru.qahacking.ru/.<br />
+2. Страница полностью загружена, футер видим.<br />
+<strong>Шаги для воспроизведения:</strong><br />
+1. Пролистать страницу до футера.<br />
+2. Ввести корректный email в поле подписки.<br />
+3. Нажать кнопку <strong>"Подписаться"</strong>.<br />
+4. Наблюдать появление ошибки.<br />
+<strong>Фактический результат:</strong><br />
+- Подписка не оформляется.<br />
+- Отображается ошибка, пользователю не предоставляется информация о причине.<br />
+<strong>Ожидаемый результат:</strong><br />
+- После ввода корректного email и нажатия кнопки подписки пользователь должен успешно подписаться.<br />
+- Должно появляться сообщение об успешной подписке или информативная ошибка, если email некорректный.<br />
+<strong>Окружение:</strong><br />
+- ОС: Windows 10<br />
+- Браузеры: Google Chrome 129.0, Firefox Latest<br />
+- Разрешение экрана: 1920×1080  <br />
+<strong>Связанный тест-кейс:</strong> <a href="#tc-062">TC-062 — Проверка корректной подписки на рассылку при вводе валидного email</a> </p>
+<hr />
+<p><strong>Bug Report — Отсутствует кнопка отправки в форме "Задать вопрос" в футере</strong><br />
+<strong>ID:</strong> BUG-014<br />
+<strong>Заголовок:</strong> В форме отправки вопроса в футере отсутствует кнопка для отправки<br />
+<strong>Приоритет:</strong> High<br />
+<strong>Серьёзность:</strong> Major (Functional / UX issue)<br />
+<strong>Страница:</strong> https://guru.qahacking.ru/<br />
+<strong>Описание:</strong><br />
+В футере сайта есть форма для отправки вопросов (<strong>"Задайте вопрос"</strong>).<br />
+На форме отсутствует кнопка <strong>"Send"</strong>, из-за чего пользователь не может отправить сообщение.<br />
+Это делает форму нефункциональной и нарушает UX.<br />
+<strong>Предусловия:</strong><br />
+1. Открыта страница https://guru.qahacking.ru/.<br />
+2. Страница полностью загружена, футер видим.<br />
+<strong>Шаги для воспроизведения:</strong><br />
+1. Пролистать страницу до футера.<br />
+2. Найти форму "Задайте вопрос".<br />
+3. Проверить наличие кнопки отправки.<br />
+<strong>Фактический результат:</strong><br />
+- Кнопка <strong>"Send"</strong> отсутствует.<br />
+- Пользователь не может отправить вопрос.<br />
+<strong>Ожидаемый результат:</strong><br />
+- На форме должна быть кнопка <strong>"Send"</strong>.<br />
+- При нажатии на кнопку данные формы должны отправляться на сервер, а пользователь получать подтверждение об успешной отправке.<br />
+<strong>Окружение:</strong><br />
+- ОС: Windows 10<br />
+- Браузеры: Google Chrome 129.0, Firefox Latest<br />
+- Разрешение экрана: 1920×1080<br />
+<strong>Связанный тест-кейс:</strong> <a href="#tc-070">TC-070 — Проверка функциональности кнопки "Send" в форме обратной связи</a>   </p>
+<hr />
+<p><strong>Bug Report — Нерабочие ссылки на социальные сети в футере</strong><br />
+<strong>ID:</strong> BUG-015<br />
+<strong>Заголовок:</strong> Ссылки на социальные сети в футере не открываются<br />
+<strong>Приоритет:</strong> Medium<br />
+<strong>Серьёзность:</strong> Minor (UX / Navigation issue)<br />
+<strong>Страница:</strong> https://guru.qahacking.ru/<br />
+<strong>Описание:</strong><br />
+В футере сайта присутствуют ссылки на социальные сети (Facebook, Instagram, VK).<br />
+При клике на любую из ссылок ничего не открывается.<br />
+Пользователь не может перейти на официальные страницы социальных сетей, что нарушает UX и снижает доверие к сайту.<br />
+<strong>Предусловия:</strong><br />
+1. Открыта страница https://guru.qahacking.ru/.<br />
+2. Страница полностью загружена, футер видим.<br />
+<strong>Шаги для воспроизведения:</strong><br />
+1. Пролистать страницу до футера.<br />
+2. Найти блок с иконками социальных сетей.<br />
+3. Кликнуть на каждую ссылку.<br />
+4. Наблюдать, что происходит после клика.<br />
+<strong>Фактический результат:</strong><br />
+- Ссылки не работают: не открывается новая страница.<br />
+<strong>Ожидаемый результат:</strong><br />
+- При клике на иконку социальной сети пользователь должен перейти на соответствующую официальную страницу компании / сайта.<br />
+<strong>Окружение:</strong><br />
+- ОС: Windows 10<br />
+- Браузеры: Google Chrome 129.0, Firefox Latest<br />
+- Разрешение экрана: 1920×1080<br />
+<strong>Связанный тест-кейс:</strong> <a href="#tc-061">TC-061: Проверка корректности ссылок на социальные сети.</a> </p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  К началу
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.instant", "navigation.sections", "search.highlight", "search.suggest", "content.code.copy"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
