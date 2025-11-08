@@ -1,0 +1,776 @@
+{
+	"info": {
+		"_postman_id": "d4f8ef37-cd23-49c8-af95-ba0d24701e6c",
+		"name": "petStore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47351565",
+		"_collection_link": "https://test77-3049.postman.co/workspace/test~8e085b9e-e5bd-40f4-9986-12d480a801f5/collection/47351565-d4f8ef37-cd23-49c8-af95-ba0d24701e6c?action=share&source=collection_link&creator=47351565"
+	},
+	"item": [
+		{
+			"name": "pet",
+			"item": [
+				{
+					"name": "post data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"id\": 1539,\r\n        \"category\": {\r\n            \"id\": 1,\r\n            \"name\": \"Lusya\"\r\n        },\r\n        \"name\": \"dog\",\r\n        \"photoUrls\": [\r\n            \"string\"\r\n        ],\r\n        \"tags\": [\r\n            {\r\n                \"id\": 1,\r\n                \"name\": \"metis\"\r\n            }\r\n        ],\r\n        \"status\": \"available\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find by status",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"id\": 1539,\r\n        \"category\": {\r\n            \"id\": 1,\r\n            \"name\": \"Lusya\"\r\n        },\r\n        \"name\": \"dog\",\r\n        \"photoUrls\": [\r\n            \"string\"\r\n        ],\r\n        \"tags\": [\r\n            {\r\n                \"id\": 1,\r\n                \"name\": \"metis\"\r\n            }\r\n        ],\r\n        \"status\": \"available\"\r\n    }"
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet/findByStatus?status=available&status=pending&status=sold",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet",
+								"findByStatus"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "available"
+								},
+								{
+									"key": "status",
+									"value": "pending"
+								},
+								{
+									"key": "status",
+									"value": "sold"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pet id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"id\": 1539,\r\n        \"category\": {\r\n            \"id\": 1,\r\n            \"name\": \"Lusya\"\r\n        },\r\n        \"name\": \"dog\",\r\n        \"photoUrls\": [\r\n            \"string\"\r\n        ],\r\n        \"tags\": [\r\n            {\r\n                \"id\": 1,\r\n                \"name\": \"metis\"\r\n            }\r\n        ],\r\n        \"status\": \"available\"\r\n    }"
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet/1549?petId=1549",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet",
+								"1549"
+							],
+							"query": [
+								{
+									"key": "petId",
+									"value": "1549"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "put pet",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"id\": 1549,\r\n        \"category\": {\r\n            \"id\": 1,\r\n            \"name\": \"Lusya\"\r\n        },\r\n        \"name\": \"dog\",\r\n        \"photoUrls\": [\r\n            \"string\"\r\n        ],\r\n        \"tags\": [\r\n            {\r\n                \"id\": 1,\r\n                \"name\": \"metis\"\r\n            }\r\n        ],\r\n        \"status\": \"sold\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "photo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "additionalMetadata",
+									"value": "image png",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "postman-cloud:///1f081033-db56-4b30-8b45-e6109c4197c2"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet/1549/uploadImage",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet",
+								"1549",
+								"uploadImage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "random id",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"let randomId = Math.floor(Math.random() * 100000);\r",
+									"pm.environment.set(\"petID\", randomId);\r",
+									"\r",
+									"let randomname = \"user_\" + randomId;\r",
+									"pm.environment.set(\"name\", randomname);\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = pm.response.json();\r",
+									"pm.environment.set(\"petId\", jsonData.id);\r",
+									"pm.environment.set(\"petName\", jsonData.name);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"id\": {{petID}},\r\n        \"category\": {\r\n            \"id\": 1,\r\n            \"name\": \"{{petName}}\"\r\n        },\r\n        \"name\": \"dog\",\r\n        \"photoUrls\": [\r\n            \"string\"\r\n        ],\r\n        \"tags\": [\r\n            {\r\n                \"id\": 1,\r\n                \"name\": \"metis\"\r\n            }\r\n        ],\r\n        \"status\": \"available\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/pet",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"pet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get new pet id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/pet/{{petID}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"pet",
+								"{{petID}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "200 del 1539",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"id\": {{petID}},\r\n        \"category\": {\r\n            \"id\": 1,\r\n            \"name\": \"{{petName}}\"\r\n        },\r\n        \"name\": \"dog\",\r\n        \"photoUrls\": [\r\n            \"string\"\r\n        ],\r\n        \"tags\": [\r\n            {\r\n                \"id\": 1,\r\n                \"name\": \"metis\"\r\n            }\r\n        ],\r\n        \"status\": \"available\"\r\n    }"
+						},
+						"url": {
+							"raw": "{{baseURL}}/pet/1539?petId=1539",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"pet",
+								"1539"
+							],
+							"query": [
+								{
+									"key": "petId",
+									"value": "1539"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "404 get 1539",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/pet/1539?petId=1539",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"pet",
+								"1539"
+							],
+							"query": [
+								{
+									"key": "petId",
+									"value": "1539"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "store",
+			"item": [
+				{
+					"name": "get invertary",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"id\": 1549,\r\n        \"category\": {\r\n            \"id\": 1,\r\n            \"name\": \"Lusya\"\r\n        },\r\n        \"name\": \"dog\",\r\n        \"photoUrls\": [\r\n            \"string\"\r\n        ],\r\n        \"tags\": [\r\n            {\r\n                \"id\": 1,\r\n                \"name\": \"metis\"\r\n            }\r\n        ],\r\n        \"status\": \"available\"\r\n    }"
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/store/inventory",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"store",
+								"inventory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"petId\": 1539,\r\n  \"quantity\": 1,\r\n  \"shipDate\": \"2025-08-26T09:50:27.829Z\",\r\n  \"status\": \"placed\",\r\n  \"complete\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/store/order",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"store",
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "orderID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"petId\": 0,\r\n  \"quantity\": 0,\r\n  \"shipDate\": \"2025-08-26T09:50:27.829Z\",\r\n  \"status\": \"placed\",\r\n  \"complete\": true\r\n}"
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/store/order/1?orderId=1",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"store",
+								"order",
+								"1"
+							],
+							"query": [
+								{
+									"key": "orderId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "Create user",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n    {\r\n    \"id\": 7325,\r\n    \"username\": \"Nastya\",\r\n    \"firstName\": \"Nastya\",\r\n    \"lastName\": \"Hop\",\r\n    \"email\": \"mochi@mail.ru\",\r\n    \"password\": \"1111\",\r\n    \"phone\": \"1111111\",\r\n    \"userStatus\": 1\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/user",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "array",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[    \r\n    {\r\n    \"id\": 7325,\r\n    \"username\": \"Nastya\",\r\n    \"firstName\": \"Nastya\",\r\n    \"lastName\": \"Hop\",\r\n    \"email\": \"mochi@mail.ru\",\r\n    \"password\": \"1111\",\r\n    \"phone\": \"1111111\",\r\n    \"userStatus\": 1\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user/createWithArray",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user",
+								"createWithArray"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list of user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[    \r\n    {\r\n    \"id\": 7325,\r\n    \"username\": \"Nastya\",\r\n    \"firstName\": \"Nastya\",\r\n    \"lastName\": \"Hop\",\r\n    \"email\": \"mochi@mail.ru\",\r\n    \"password\": \"1111\",\r\n    \"phone\": \"1111111\",\r\n    \"userStatus\": 1\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user/createWithList",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user",
+								"createWithList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.environment.set(\"userId\", jsonData.id);\r",
+									"pm.environment.set(\"username\", jsonData.username);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 7325,\r\n  \"username\": \"Nastya\",\r\n  \"firstName\": \"Nastya\",\r\n  \"lastName\": \"Hop\",\r\n  \"email\": \"mochi@mail.ru\",\r\n  \"password\": \"1111\",\r\n  \"phone\": \"1111111\",\r\n  \"userStatus\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user/Nastya",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user",
+								"Nastya"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "put username",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": {{userId}},\r\n  \"username\": \"{{username}}\",\r\n  \"firstName\": \"ateeny\",\r\n  \"lastName\": \"pim\",\r\n  \"email\": \"dera111@mail.ru\",\r\n  \"password\": \"1111\",\r\n  \"phone\": \"222222222\",\r\n  \"userStatus\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/user/{{username}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"user",
+								"{{username}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get login",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 7325,\r\n  \"username\": \"User1\",\r\n  \"firstName\": \"Nastya\",\r\n  \"lastName\": \"Hop\",\r\n  \"email\": \"mochi@mail.ru\",\r\n  \"password\": \"1111\",\r\n  \"phone\": \"1111111\",\r\n  \"userStatus\": 1\r\n}"
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user/login?username={{username}}&password=1111",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user",
+								"login"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "{{username}}"
+								},
+								{
+									"key": "password",
+									"value": "1111"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user/logout",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "200 user 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n    \"id\": 47574637847583,\r\n    \"username\": \"Mochi\",\r\n    \"firstName\": \"Mochi\",\r\n    \"lastName\": \"Dera\",\r\n    \"email\": \"dera111@mail.ru\",\r\n    \"password\": \"1111\",\r\n    \"phone\": \"222222222\",\r\n    \"userStatus\": 2\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/user",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "200 delete user2",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": {{userId}},\r\n  \"username\": \"{{username}}\",\r\n  \"firstName\": \"ateeny\",\r\n  \"lastName\": \"pim\",\r\n  \"email\": \"dera111@mail.ru\",\r\n  \"password\": \"1111\",\r\n  \"phone\": \"222222222\",\r\n  \"userStatus\": 2\r\n}"
+						},
+						"url": {
+							"raw": "{{baseURL}}/user/{{username}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"user",
+								"{{username}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "404 get user 2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": {{userId}},\r\n  \"username\": \"{{username}}\",\r\n  \"firstName\": \"ateeny\",\r\n  \"lastName\": \"pim\",\r\n  \"email\": \"dera111@mail.ru\",\r\n  \"password\": \"1111\",\r\n  \"phone\": \"222222222\",\r\n  \"userStatus\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/user/{{username}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"user",
+								"{{username}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

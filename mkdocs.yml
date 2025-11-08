@@ -1,0 +1,24 @@
+site_name: QA Portfolio
+site_description: Портфолио тестовой документации
+site_author: Анастасия
+theme:
+  name: material
+  language: ru
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: gray
+  features:
+    - navigation.top
+    - navigation.instant
+    - navigation.sections
+    - search.highlight
+    - search.suggest
+    - content.code.copy 
+nav:
+  - Главная: index.md
+  - Функциональное тестирование регистрации: Culture.md
+  - Тестирование веб-приложения Собаседник: qahacking.md
+  - Petstore REST API Project: PetstoreAPI.md
+
