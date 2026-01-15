@@ -5,8 +5,7 @@ theme:
   name: material
   language: ru
   palette:
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+      scheme: default
       primary: blue
       accent: gray
   features:
